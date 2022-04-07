@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeamMP Tool", "BeamMP Tool\BeamMP Tool.csproj", "{B2801196-BFC8-479F-ACFA-959791B4ED76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2801196-BFC8-479F-ACFA-959791B4ED76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2801196-BFC8-479F-ACFA-959791B4ED76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2801196-BFC8-479F-ACFA-959791B4ED76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2801196-BFC8-479F-ACFA-959791B4ED76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1079C31-7C85-46D6-9EFD-88B6FCE1A8EE}
+	EndGlobalSection
+EndGlobal

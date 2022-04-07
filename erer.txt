@@ -1,0 +1,6 @@
+.Substring(entry.FullName.IndexOf(@"vehicles\") + 11, entry.FullName.IndexOf(entry.FullName.Substring(entry.FullName.IndexOf(@"vehicles\") + 11), entry.FullName.IndexOf(@"\")));
+
+\                        if (state == false)
+                        {
+
+                        }
