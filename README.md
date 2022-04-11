@@ -3,5 +3,5 @@
 <ins>**Installation instructions:**</ins> Simply copy and paste the executable inside your BeamMP server directory.
 
 **Preview:**
+![image](https://user-images.githubusercontent.com/55713334/162746418-5a411f6a-f3f9-4835-96b4-d7e357c73633.png)
 
-![image](https://user-images.githubusercontent.com/55713334/162730356-0f41596f-90c4-4159-97a5-ca0f8bd6a4f4.png)
