@@ -5,3 +5,5 @@
 **Preview:**
 ![image](https://user-images.githubusercontent.com/55713334/162746418-5a411f6a-f3f9-4835-96b4-d7e357c73633.png)
 
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=FFFSN8XZHVWRU)
+
