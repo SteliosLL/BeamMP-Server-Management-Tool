@@ -21,3 +21,26 @@ E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool-copy\BeamMP
 E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool-copy\BeamMP Tool\obj\Release\BeamMP Tool.csproj.CopyComplete
 E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool-copy\BeamMP Tool\obj\Release\BeamMP Server Management Tool.exe
 E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool-copy\BeamMP Tool\obj\Release\BeamMP Server Management Tool.pdb
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\bin\Release\BeamMP Server Management Tool.exe.config
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\bin\Release\BeamMP Server Management Tool.exe
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\bin\Release\BeamMP Server Management Tool.pdb
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\bin\Release\Newtonsoft.Json.xml
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\bin\Release\System.Buffers.xml
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\bin\Release\System.Diagnostics.DiagnosticSource.xml
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\bin\Release\System.Memory.xml
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\bin\Release\System.Numerics.Vectors.xml
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP Tool.csproj.AssemblyReference.cache
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP Tool.csproj.SuggestedBindingRedirects.cache
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP_Tool.Form1.resources
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP_Tool.infoHelpFrm.resources
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP_Tool.logFrm.resources
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP_Tool.Properties.Resources.resources
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP_Tool.restartTimerForm.resources
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP_Tool.searchFrm.resources
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP Tool.csproj.GenerateResource.cache
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP Tool.csproj.CoreCompileInputs.cache
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP Tool.csproj.Fody.CopyLocal.cache
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP Tool.csproj.CopyComplete
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP Server Management Tool.exe
+E:\My files\My Projects\Programming-Software\VS Projects\BeamMP Tool\BeamMP Tool\obj\Release\BeamMP Server Management Tool.pdb

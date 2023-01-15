@@ -58,8 +58,19 @@ namespace BeamMP_Tool
             this.button2 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.reloadCfgBtn = new System.Windows.Forms.Button();
+            this.searchMapsBtn = new System.Windows.Forms.Button();
+            this.searchPluginsBtn = new System.Windows.Forms.Button();
+            this.searchModsBtn = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.setCustomStartupFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetToDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autoRestartTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restartBtn = new System.Windows.Forms.Button();
             this.startBtn = new System.Windows.Forms.Button();
             this.selectCustomStartFile = new System.Windows.Forms.OpenFileDialog();
@@ -72,17 +83,6 @@ namespace BeamMP_Tool
             this.pluginImgList = new System.Windows.Forms.ImageList(this.components);
             this.activatePluginsBtn = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.reloadCfgBtn = new System.Windows.Forms.Button();
-            this.searchMapsBtn = new System.Windows.Forms.Button();
-            this.searchPluginsBtn = new System.Windows.Forms.Button();
-            this.searchModsBtn = new System.Windows.Forms.Button();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.setCustomStartupFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetToDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.autoRestartTimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mapgrp.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -143,19 +143,21 @@ namespace BeamMP_Tool
             this.defMapsImgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("defMapsImgList.ImageStream")));
             this.defMapsImgList.TransparentColor = System.Drawing.Color.Transparent;
             this.defMapsImgList.Images.SetKeyName(0, "custommap.png");
-            this.defMapsImgList.Images.SetKeyName(1, "GridMap_preview4.jpg");
-            this.defMapsImgList.Images.SetKeyName(2, "automation_test_track_preview1.jpg");
-            this.defMapsImgList.Images.SetKeyName(3, "east_coast_usa_preview1_v2.jpg");
-            this.defMapsImgList.Images.SetKeyName(4, "hirochi_raceway_preview.jpg");
-            this.defMapsImgList.Images.SetKeyName(5, "italy_preview0.jpg");
-            this.defMapsImgList.Images.SetKeyName(6, "Industrial_preview.jpg");
-            this.defMapsImgList.Images.SetKeyName(7, "small_island_preview.jpg");
-            this.defMapsImgList.Images.SetKeyName(8, "smallgrid_preview.jpg");
-            this.defMapsImgList.Images.SetKeyName(9, "utah_preview4.jpg");
-            this.defMapsImgList.Images.SetKeyName(10, "west_coast_usa_preview1.jpg");
-            this.defMapsImgList.Images.SetKeyName(11, "driver_training_preview.jpg");
-            this.defMapsImgList.Images.SetKeyName(12, "derby_preview_1.jpg");
-            this.defMapsImgList.Images.SetKeyName(13, "jungle_rock_island_preview1.jpg");
+            this.defMapsImgList.Images.SetKeyName(1, "gridmap_v2_preview.jpg");
+            this.defMapsImgList.Images.SetKeyName(2, "GridMap_preview4.jpg");
+            this.defMapsImgList.Images.SetKeyName(3, "automation_test_track_preview1.jpg");
+            this.defMapsImgList.Images.SetKeyName(4, "east_coast_usa_preview1_v2.jpg");
+            this.defMapsImgList.Images.SetKeyName(5, "hirochi_raceway_preview.jpg");
+            this.defMapsImgList.Images.SetKeyName(6, "italy_preview0.jpg");
+            this.defMapsImgList.Images.SetKeyName(7, "Industrial_preview.jpg");
+            this.defMapsImgList.Images.SetKeyName(8, "small_island_preview.jpg");
+            this.defMapsImgList.Images.SetKeyName(9, "smallgrid_preview.jpg");
+            this.defMapsImgList.Images.SetKeyName(10, "utah_preview4.jpg");
+            this.defMapsImgList.Images.SetKeyName(11, "west_coast_usa_preview1.jpg");
+            this.defMapsImgList.Images.SetKeyName(12, "driver_training_preview.jpg");
+            this.defMapsImgList.Images.SetKeyName(13, "derby_preview_1.jpg");
+            this.defMapsImgList.Images.SetKeyName(14, "jungle_rock_island_preview1.jpg");
+            this.defMapsImgList.Images.SetKeyName(15, "johnson_valley_preview.jpg");
             // 
             // groupBox2
             // 
@@ -390,6 +392,71 @@ namespace BeamMP_Tool
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(523, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 25);
+            this.button1.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.button1, "Help-Information");
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // reloadCfgBtn
+            // 
+            this.reloadCfgBtn.FlatAppearance.BorderSize = 0;
+            this.reloadCfgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reloadCfgBtn.Image = ((System.Drawing.Image)(resources.GetObject("reloadCfgBtn.Image")));
+            this.reloadCfgBtn.Location = new System.Drawing.Point(-3, -3);
+            this.reloadCfgBtn.Name = "reloadCfgBtn";
+            this.reloadCfgBtn.Size = new System.Drawing.Size(24, 24);
+            this.reloadCfgBtn.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.reloadCfgBtn, "Reload settings, maps etc");
+            this.reloadCfgBtn.UseVisualStyleBackColor = true;
+            this.reloadCfgBtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // searchMapsBtn
+            // 
+            this.searchMapsBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.searchMapsBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.searchMapsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
+            this.searchMapsBtn.Location = new System.Drawing.Point(504, 131);
+            this.searchMapsBtn.Name = "searchMapsBtn";
+            this.searchMapsBtn.Size = new System.Drawing.Size(27, 24);
+            this.searchMapsBtn.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.searchMapsBtn, "Search Maps");
+            this.searchMapsBtn.UseVisualStyleBackColor = true;
+            this.searchMapsBtn.Click += new System.EventHandler(this.searchMapsBtn_Click);
+            // 
+            // searchPluginsBtn
+            // 
+            this.searchPluginsBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.searchPluginsBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.searchPluginsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
+            this.searchPluginsBtn.Location = new System.Drawing.Point(100, 170);
+            this.searchPluginsBtn.Name = "searchPluginsBtn";
+            this.searchPluginsBtn.Size = new System.Drawing.Size(27, 24);
+            this.searchPluginsBtn.TabIndex = 19;
+            this.toolTip1.SetToolTip(this.searchPluginsBtn, "Search Plugins");
+            this.searchPluginsBtn.UseVisualStyleBackColor = true;
+            this.searchPluginsBtn.Click += new System.EventHandler(this.searchPluginsBtn_Click);
+            // 
+            // searchModsBtn
+            // 
+            this.searchModsBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.searchModsBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.searchModsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
+            this.searchModsBtn.Location = new System.Drawing.Point(99, 215);
+            this.searchModsBtn.Name = "searchModsBtn";
+            this.searchModsBtn.Size = new System.Drawing.Size(27, 24);
+            this.searchModsBtn.TabIndex = 18;
+            this.toolTip1.SetToolTip(this.searchModsBtn, "Search Mods");
+            this.searchModsBtn.UseVisualStyleBackColor = true;
+            this.searchModsBtn.Click += new System.EventHandler(this.button5_Click);
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.toolStrip1);
@@ -414,6 +481,60 @@ namespace BeamMP_Tool
             this.toolStrip1.Size = new System.Drawing.Size(32, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.setCustomStartupFileToolStripMenuItem,
+            this.autoRestartTimerToolStripMenuItem,
+            this.logToolStripMenuItem});
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 22);
+            // 
+            // setCustomStartupFileToolStripMenuItem
+            // 
+            this.setCustomStartupFileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.selectToolStripMenuItem,
+            this.resetToDefaultToolStripMenuItem});
+            this.setCustomStartupFileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("setCustomStartupFileToolStripMenuItem.Image")));
+            this.setCustomStartupFileToolStripMenuItem.Name = "setCustomStartupFileToolStripMenuItem";
+            this.setCustomStartupFileToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.setCustomStartupFileToolStripMenuItem.Text = "Set custom startup file...";
+            // 
+            // selectToolStripMenuItem
+            // 
+            this.selectToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.selectToolStripMenuItem.ForeColor = System.Drawing.Color.Green;
+            this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
+            this.selectToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.selectToolStripMenuItem.Text = "Select...";
+            this.selectToolStripMenuItem.Click += new System.EventHandler(this.selectToolStripMenuItem_Click);
+            // 
+            // resetToDefaultToolStripMenuItem
+            // 
+            this.resetToDefaultToolStripMenuItem.Name = "resetToDefaultToolStripMenuItem";
+            this.resetToDefaultToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.resetToDefaultToolStripMenuItem.Text = "Reset to default (BeamMP-Server.exe)";
+            this.resetToDefaultToolStripMenuItem.Click += new System.EventHandler(this.resetToDefaultToolStripMenuItem_Click);
+            // 
+            // autoRestartTimerToolStripMenuItem
+            // 
+            this.autoRestartTimerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("autoRestartTimerToolStripMenuItem.Image")));
+            this.autoRestartTimerToolStripMenuItem.Name = "autoRestartTimerToolStripMenuItem";
+            this.autoRestartTimerToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.autoRestartTimerToolStripMenuItem.Text = "Auto restart timer";
+            this.autoRestartTimerToolStripMenuItem.Click += new System.EventHandler(this.autoRestartTimerToolStripMenuItem_Click);
+            // 
+            // logToolStripMenuItem
+            // 
+            this.logToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logToolStripMenuItem.Image")));
+            this.logToolStripMenuItem.Name = "logToolStripMenuItem";
+            this.logToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.logToolStripMenuItem.Text = "Log";
+            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
             // 
             // restartBtn
             // 
@@ -549,125 +670,6 @@ namespace BeamMP_Tool
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "ServerConfig.toml";
             // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(523, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 25);
-            this.button1.TabIndex = 3;
-            this.toolTip1.SetToolTip(this.button1, "Help-Information");
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // reloadCfgBtn
-            // 
-            this.reloadCfgBtn.FlatAppearance.BorderSize = 0;
-            this.reloadCfgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reloadCfgBtn.Image = ((System.Drawing.Image)(resources.GetObject("reloadCfgBtn.Image")));
-            this.reloadCfgBtn.Location = new System.Drawing.Point(-3, -3);
-            this.reloadCfgBtn.Name = "reloadCfgBtn";
-            this.reloadCfgBtn.Size = new System.Drawing.Size(24, 24);
-            this.reloadCfgBtn.TabIndex = 2;
-            this.toolTip1.SetToolTip(this.reloadCfgBtn, "Reload settings, maps etc");
-            this.reloadCfgBtn.UseVisualStyleBackColor = true;
-            this.reloadCfgBtn.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // searchMapsBtn
-            // 
-            this.searchMapsBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.searchMapsBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.searchMapsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
-            this.searchMapsBtn.Location = new System.Drawing.Point(504, 131);
-            this.searchMapsBtn.Name = "searchMapsBtn";
-            this.searchMapsBtn.Size = new System.Drawing.Size(27, 24);
-            this.searchMapsBtn.TabIndex = 20;
-            this.toolTip1.SetToolTip(this.searchMapsBtn, "Search Maps");
-            this.searchMapsBtn.UseVisualStyleBackColor = true;
-            this.searchMapsBtn.Click += new System.EventHandler(this.searchMapsBtn_Click);
-            // 
-            // searchPluginsBtn
-            // 
-            this.searchPluginsBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.searchPluginsBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.searchPluginsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
-            this.searchPluginsBtn.Location = new System.Drawing.Point(100, 170);
-            this.searchPluginsBtn.Name = "searchPluginsBtn";
-            this.searchPluginsBtn.Size = new System.Drawing.Size(27, 24);
-            this.searchPluginsBtn.TabIndex = 19;
-            this.toolTip1.SetToolTip(this.searchPluginsBtn, "Search Plugins");
-            this.searchPluginsBtn.UseVisualStyleBackColor = true;
-            this.searchPluginsBtn.Click += new System.EventHandler(this.searchPluginsBtn_Click);
-            // 
-            // searchModsBtn
-            // 
-            this.searchModsBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.searchModsBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.searchModsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
-            this.searchModsBtn.Location = new System.Drawing.Point(99, 215);
-            this.searchModsBtn.Name = "searchModsBtn";
-            this.searchModsBtn.Size = new System.Drawing.Size(27, 24);
-            this.searchModsBtn.TabIndex = 18;
-            this.toolTip1.SetToolTip(this.searchModsBtn, "Search Mods");
-            this.searchModsBtn.UseVisualStyleBackColor = true;
-            this.searchModsBtn.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.setCustomStartupFileToolStripMenuItem,
-            this.autoRestartTimerToolStripMenuItem,
-            this.logToolStripMenuItem});
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 22);
-            // 
-            // setCustomStartupFileToolStripMenuItem
-            // 
-            this.setCustomStartupFileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.selectToolStripMenuItem,
-            this.resetToDefaultToolStripMenuItem});
-            this.setCustomStartupFileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("setCustomStartupFileToolStripMenuItem.Image")));
-            this.setCustomStartupFileToolStripMenuItem.Name = "setCustomStartupFileToolStripMenuItem";
-            this.setCustomStartupFileToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.setCustomStartupFileToolStripMenuItem.Text = "Set custom startup file...";
-            // 
-            // selectToolStripMenuItem
-            // 
-            this.selectToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.selectToolStripMenuItem.ForeColor = System.Drawing.Color.Green;
-            this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            this.selectToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
-            this.selectToolStripMenuItem.Text = "Select...";
-            this.selectToolStripMenuItem.Click += new System.EventHandler(this.selectToolStripMenuItem_Click);
-            // 
-            // resetToDefaultToolStripMenuItem
-            // 
-            this.resetToDefaultToolStripMenuItem.Name = "resetToDefaultToolStripMenuItem";
-            this.resetToDefaultToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
-            this.resetToDefaultToolStripMenuItem.Text = "Reset to default (BeamMP-Server.exe)";
-            this.resetToDefaultToolStripMenuItem.Click += new System.EventHandler(this.resetToDefaultToolStripMenuItem_Click);
-            // 
-            // autoRestartTimerToolStripMenuItem
-            // 
-            this.autoRestartTimerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("autoRestartTimerToolStripMenuItem.Image")));
-            this.autoRestartTimerToolStripMenuItem.Name = "autoRestartTimerToolStripMenuItem";
-            this.autoRestartTimerToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.autoRestartTimerToolStripMenuItem.Text = "Auto restart timer";
-            this.autoRestartTimerToolStripMenuItem.Click += new System.EventHandler(this.autoRestartTimerToolStripMenuItem_Click);
-            // 
-            // logToolStripMenuItem
-            // 
-            this.logToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logToolStripMenuItem.Image")));
-            this.logToolStripMenuItem.Name = "logToolStripMenuItem";
-            this.logToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.logToolStripMenuItem.Text = "Log";
-            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::BeamMP_Tool.Properties.Resources.paypal_donate_button_high_quality_png_1_orig;
@@ -697,7 +699,7 @@ namespace BeamMP_Tool
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "BeamMP Server Management Tool v2.1.1";
+            this.Text = "BeamMP Server Management Tool v2.2";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.mapgrp.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

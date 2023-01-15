@@ -90,19 +90,21 @@ namespace BeamMP_Tool
             foreach (Image img in defMapsImgList.Images)
             { mainMapImgList.Images.Add(img); }
             //load default maps
-            mapsListView.Items.Add("Gridmap", 1).Tag = @"/levels/gridmap_v2/info.json";
-            mapsListView.Items.Add("Automation Test Track", 2).Tag = @"/levels/automation_test_track/info.json";
-            mapsListView.Items.Add("East Coast USA", 3).Tag = @"/levels/east_coast_usa/info.json";
-            mapsListView.Items.Add("Hirochi Raceway", 4).Tag = @"/levels/hirochi_raceway/info.json";
-            mapsListView.Items.Add("Italy", 5).Tag = @"/levels/italy/info.json";
-            mapsListView.Items.Add("Industrial", 6).Tag = @"/levels/industrial/info.json";
-            mapsListView.Items.Add("Small Island", 7).Tag = @"/levels/small_island/info.json";
-            mapsListView.Items.Add("Small Grid", 8).Tag = @"/levels/smallgrid/info.json";
-            mapsListView.Items.Add("Utah", 9).Tag = @"/levels/utah/info.json";
-            mapsListView.Items.Add("West Coast USA", 10).Tag = @"/levels/west_coast_usa/info.json";
-            mapsListView.Items.Add("Driver Training", 11).Tag = @"/levels/driver_training/info.json";
-            mapsListView.Items.Add("Derby", 12).Tag = @"/levels/derby/info.json";
-            mapsListView.Items.Add("Jungle Rock Island", 13).Tag = @"/levels/jungle_rock_island/info.json";
+            mapsListView.Items.Add("Gridmap v2", 1).Tag = @"/levels/gridmap_v2/info.json";
+            mapsListView.Items.Add("Gridmap", 2).Tag = @"/levels/gridmap/info.json";
+            mapsListView.Items.Add("Automation Test Track", 3).Tag = @"/levels/automation_test_track/info.json";
+            mapsListView.Items.Add("East Coast USA", 4).Tag = @"/levels/east_coast_usa/info.json";
+            mapsListView.Items.Add("Hirochi Raceway", 5).Tag = @"/levels/hirochi_raceway/info.json";
+            mapsListView.Items.Add("Italy", 6).Tag = @"/levels/italy/info.json";
+            mapsListView.Items.Add("Industrial", 7).Tag = @"/levels/industrial/info.json";
+            mapsListView.Items.Add("Small Island", 8).Tag = @"/levels/small_island/info.json";
+            mapsListView.Items.Add("Small Grid", 9).Tag = @"/levels/smallgrid/info.json";
+            mapsListView.Items.Add("Utah", 10).Tag = @"/levels/utah/info.json";
+            mapsListView.Items.Add("West Coast USA", 11).Tag = @"/levels/west_coast_usa/info.json";
+            mapsListView.Items.Add("Driver Training", 12).Tag = @"/levels/driver_training/info.json";
+            mapsListView.Items.Add("Derby", 13).Tag = @"/levels/derby/info.json";
+            mapsListView.Items.Add("Jungle Rock Island", 14).Tag = @"/levels/jungle_rock_island/info.json";
+            mapsListView.Items.Add("Johnson Valley", 15).Tag = @"/levels/johnson_valley/info.json";
             foreach (ListViewItem item in mapsListView.Items)
             { backupMapListview.Items.Add((ListViewItem)item.Clone()); ; }
 

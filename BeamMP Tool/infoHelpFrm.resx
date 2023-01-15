@@ -132,7 +132,10 @@ I will probably not accept friend requests so if you want to DM me you will
 have to join the official BeamMP discord server.</value>
   </data>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>Version 2.1.1
+    <value>Version 2.2 (15/1/2023)
+ -Added Johnson Valley and old Gridmap maps
+
+Version 2.1.1
  -Implemented all DLLs into the main executable. Now all
   you have to do is copy the executable into the BeamMP
   folder.
