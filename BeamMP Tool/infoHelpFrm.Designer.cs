@@ -111,7 +111,7 @@ namespace BeamMP_Tool
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(129, 13);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Ruff \'n Tuff diesel#3429";
+            this.label4.Text = "Diesel Geezer#3429";
             // 
             // infoHelpFrm
             // 
