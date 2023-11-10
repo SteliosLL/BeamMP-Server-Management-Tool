@@ -1,0 +1,5 @@
+[04/10/23 14:17:17] [INFO] BeamMP Server v3.1.1
+[04/10/23 14:17:17] [ERROR] No AuthKey specified in the "ServerConfig.toml" file. Please get an AuthKey, enter it into the config file, and restart this server.
+[04/10/23 14:17:17] [INFO] Closing in 10 seconds
+[04/10/23 14:17:17] [ERROR] "Resources\Server\main.lua" is not a directory, skipping
+[04/10/23 14:17:17] [ERROR] "Resources\Server\tamain.lua" is not a directory, skipping

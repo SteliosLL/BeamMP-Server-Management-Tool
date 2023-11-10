@@ -1,0 +1,16 @@
+02:17 μμ>>> Server started
+02:17 μμ>>> Server stopped
+04:12 μμ>>> Saved server settings
+04:13 μμ>>> Saved server settings
+04:13 μμ>>> Firewall rules creation cancelled/failed
+04:14 μμ>>> Firewall rules creation success
+04:17 μμ>>> Saved server settings
+04:18 μμ>>> Saved server settings
+04:18 μμ>>> Saved server settings
+04:18 μμ>>> Saved server settings
+04:19 μμ>>> Saved server settings
+04:20 μμ>>> Saved server settings
+11:35 μμ>>> Saved server settings
+11:40 μμ>>> Saved server settings
+11:41 μμ>>> Saved server settings
+11:48 μμ>>> Saved server settings

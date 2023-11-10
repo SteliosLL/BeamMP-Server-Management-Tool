@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Server_Creation_Tool.myClasses
+namespace BeamMP_Tool
 {
     public class log
     {

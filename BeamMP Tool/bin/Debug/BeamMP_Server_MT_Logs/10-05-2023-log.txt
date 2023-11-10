@@ -1,0 +1,292 @@
+12:09 μμ>>> Server started
+12:09 μμ>>> Server stopped
+12:09 μμ>>> Server started
+12:11 μμ>>> Server started
+12:11 μμ>>> Server stopped
+12:11 μμ>>> Server stopped
+12:11 μμ>>> Server started
+12:11 μμ>>> Server stopped
+12:11 μμ>>> Server stopped
+12:12 μμ>>> Server started
+12:12 μμ>>> Server stopped
+12:19 μμ>>> Server started
+12:19 μμ>>> Server stopped
+12:19 μμ>>> Server stopped
+12:19 μμ>>> Server started
+12:20 μμ>>> Server stopped
+12:25 μμ>>> Server started
+12:27 μμ>>> Server started
+12:30 μμ>>> Server started
+12:30 μμ>>> Server stopped
+12:30 μμ>>> Server started
+12:37 μμ>>> Server stopped
+12:37 μμ>>> Server started
+12:38 μμ>>> Server started
+12:38 μμ>>> Server stopped
+12:38 μμ>>> Server stopped
+12:38 μμ>>> Server started
+12:38 μμ>>> Server started
+12:41 μμ>>> Server started
+12:45 μμ>>> Server started
+12:57 μμ>>> Server started
+01:01 μμ>>> Server started
+01:04 μμ>>> Server started
+01:07 μμ>>> Server started
+01:07 μμ>>> Server stopped
+01:07 μμ>>> Server stopped
+01:07 μμ>>> Server started
+01:53 μμ>>> Server started
+01:53 μμ>>> Server stopped
+01:53 μμ>>> Server stopped
+01:56 μμ>>> Server started
+01:56 μμ>>> Server stopped
+02:23 μμ>>> Server started
+02:24 μμ>>> Server started
+02:24 μμ>>> Server stopped
+02:24 μμ>>> Server stopped
+02:24 μμ>>> Server started
+02:25 μμ>>> Server stopped
+02:25 μμ>>> Server started
+02:41 μμ>>> Server started
+02:42 μμ>>> Server stopped
+02:42 μμ>>> Server stopped
+02:48 μμ>>> Server started
+02:49 μμ>>> Server stopped
+02:49 μμ>>> Server stopped
+02:56 μμ>>> Server started
+03:15 μμ>>> Server started
+03:15 μμ>>> Server started
+03:15 μμ>>> Server successfully restarted
+03:15 μμ>>> Server started
+03:15 μμ>>> Server successfully restarted
+03:15 μμ>>> Server stopped
+03:15 μμ>>> Server started
+03:15 μμ>>> Server successfully restarted
+03:15 μμ>>> Server stopped
+03:15 μμ>>> Server stopped
+04:19 μμ>>> Server started
+04:19 μμ>>> Server stopped
+04:19 μμ>>> Server started
+04:22 μμ>>> A change in the config file has been detected. Restarting
+04:22 μμ>>> Server started
+04:22 μμ>>> Server successfully restarted
+04:22 μμ>>> Server stopped
+04:41 μμ>>> Server started
+04:42 μμ>>> Server started
+04:42 μμ>>> Server successfully restarted
+04:42 μμ>>> Server stopped
+04:42 μμ>>> Server started
+04:42 μμ>>> A change in the config file has been detected. Restarting
+04:42 μμ>>> Server started
+04:42 μμ>>> Server successfully restarted
+04:42 μμ>>> Server stopped
+04:46 μμ>>> Saved server settings
+04:46 μμ>>> Server started
+04:46 μμ>>> A change in the config file has been detected. Restarting
+04:46 μμ>>> Server stopped
+04:46 μμ>>> Server started
+04:46 μμ>>> Server successfully restarted
+04:57 μμ>>> Server started
+04:59 μμ>>> ERROR: Couldn't find the configuration file.
+04:59 μμ>>> ERROR: Couldn't find the configuration file.
+04:59 μμ>>> ERROR: Couldn't find the configuration file.
+04:59 μμ>>> Server stopped
+04:59 μμ>>> Server started
+05:00 μμ>>> Server stopped
+05:00 μμ>>> Server started
+05:00 μμ>>> ERROR: Couldn't find the configuration file.
+05:03 μμ>>> Server started
+06:41 μμ>>> Server started
+06:55 μμ>>> Server started
+06:56 μμ>>> Server stopped
+06:56 μμ>>> Server started
+06:56 μμ>>> Server successfully restarted
+06:57 μμ>>> Server stopped
+06:58 μμ>>> Server started
+06:58 μμ>>> Performing scheduled server restart
+06:58 μμ>>> Server stopped
+06:58 μμ>>> Server started
+06:58 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Server started
+06:59 μμ>>> ERROR: Failed to stop the server!
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Performing scheduled server restart
+06:59 μμ>>> Server stopped
+06:59 μμ>>> Server started
+06:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Server started
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server started
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+08:59 μμ>>> Performing scheduled server restart
+08:59 μμ>>> Server stopped
+08:59 μμ>>> Server started
+08:59 μμ>>> Server successfully restarted
+09:00 μμ>>> Server started
+10:04 μμ>>> Saved server settings
+10:05 μμ>>> Server started
+10:06 μμ>>> Server stopped
+10:08 μμ>>> Saved server settings
+10:08 μμ>>> Saved server settings
+10:11 μμ>>> Server started
+10:11 μμ>>> Server stopped
+10:11 μμ>>> Server started
+10:11 μμ>>> Server stopped
+10:23 μμ>>> Server started
+10:23 μμ>>> Server stopped
+10:23 μμ>>> Server started
+10:23 μμ>>> Server successfully restarted
+10:23 μμ>>> Server stopped
+10:23 μμ>>> Server started
+10:23 μμ>>> Server stopped
+10:23 μμ>>> Server started
+10:23 μμ>>> Server successfully restarted
+10:23 μμ>>> Server stopped
+10:23 μμ>>> Server started
+10:23 μμ>>> Server successfully restarted
+10:23 μμ>>> Server stopped
+10:23 μμ>>> Server started
+10:23 μμ>>> Server successfully restarted
+10:24 μμ>>> Server stopped
+10:24 μμ>>> Server started
+10:24 μμ>>> Server successfully restarted
+10:24 μμ>>> Server stopped
+10:24 μμ>>> Server started
+10:24 μμ>>> Server successfully restarted
+10:24 μμ>>> Server stopped
+10:24 μμ>>> Server started
+10:24 μμ>>> Server successfully restarted
+10:24 μμ>>> Server stopped
+10:24 μμ>>> Server started
+10:24 μμ>>> Server successfully restarted
+10:24 μμ>>> Server stopped
+10:25 μμ>>> Server started
+10:25 μμ>>> Server stopped
+10:25 μμ>>> Server started
+10:25 μμ>>> Server stopped
+10:25 μμ>>> Server started
+10:25 μμ>>> Server successfully restarted
+10:25 μμ>>> Server stopped
+10:25 μμ>>> Server started
+10:25 μμ>>> Server successfully restarted
+10:25 μμ>>> Server stopped
+10:25 μμ>>> Server started
+10:25 μμ>>> Server successfully restarted
+10:27 μμ>>> Server started
+10:31 μμ>>> Server started
+10:55 μμ>>> Server stopped
+10:55 μμ>>> Server started
+11:24 μμ>>> Server started

@@ -1,4 +1,4 @@
-﻿using Server_Creation_Tool.myClasses;
+﻿using BeamMP_Tool;
 using System;
 using System.ComponentModel;
 using System.Threading;
@@ -39,6 +39,11 @@ namespace BeamMP_Tool
             try
             { System.Diagnostics.Process.Start(Application.StartupPath + @"\BeamMP_Server_MT_Logs"); }
             catch { MessageBox.Show("The logs folder couldn't be found!"); }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

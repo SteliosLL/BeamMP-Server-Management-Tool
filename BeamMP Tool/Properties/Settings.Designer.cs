@@ -12,7 +12,7 @@ namespace BeamMP_Tool.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.5.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -62,12 +62,12 @@ namespace BeamMP_Tool.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int restartTimerHours {
+        public int restartTimerMins {
             get {
-                return ((int)(this["restartTimerHours"]));
+                return ((int)(this["restartTimerMins"]));
             }
             set {
-                this["restartTimerHours"] = value;
+                this["restartTimerMins"] = value;
             }
         }
         
@@ -104,6 +104,66 @@ namespace BeamMP_Tool.Properties {
             }
             set {
                 this["checkModPluginChanges"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool dontshowMsgOpenMapsFold {
+            get {
+                return ((bool)(this["dontshowMsgOpenMapsFold"]));
+            }
+            set {
+                this["dontshowMsgOpenMapsFold"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool dontshowMsgSave {
+            get {
+                return ((bool)(this["dontshowMsgSave"]));
+            }
+            set {
+                this["dontshowMsgSave"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool dontshowMsgSSL {
+            get {
+                return ((bool)(this["dontshowMsgSSL"]));
+            }
+            set {
+                this["dontshowMsgSSL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool dontshowMsgNewPort {
+            get {
+                return ((bool)(this["dontshowMsgNewPort"]));
+            }
+            set {
+                this["dontshowMsgNewPort"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool dontshowMsgFIRSTSTARTUPNOTE {
+            get {
+                return ((bool)(this["dontshowMsgFIRSTSTARTUPNOTE"]));
+            }
+            set {
+                this["dontshowMsgFIRSTSTARTUPNOTE"] = value;
             }
         }
     }

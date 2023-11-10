@@ -1,0 +1,5 @@
+01:46 μμ>>> ERROR: Failed to move the folder
+System.IO.DirectoryNotFoundException: Δεν ήταν δυνατή η εύρεση μέρους της διαδρομής 'E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\bin\Debug\Resources\Server\deactivated_plugins\main.lua'.
+   σε System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   σε System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   σε BeamMP_Tool.Form1.activateModOrPlugin(Boolean activate, String deactivatedFold, String activatedFold, String type) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 1008

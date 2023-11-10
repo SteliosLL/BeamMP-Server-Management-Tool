@@ -1,0 +1,104 @@
+12:24 μμ>>> Saved server settings
+12:25 μμ>>> ERROR:  Could not save the settings!
+System.NullReferenceException: Δεν έχει οριστεί αναφορά αντικειμένου σε μια παρουσία αντικειμένου.
+   σε Tommy.TomlNode.op_Implicit(TomlNode value)
+   σε BeamMP_Tool.Form1.loadCfg() στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 489
+   σε BeamMP_Tool.Form1.button2_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 749
+   σε System.Windows.Forms.Control.OnClick(EventArgs e)
+   σε System.Windows.Forms.Button.PerformClick()
+   σε BeamMP_Tool.Form1.saveBtn_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 861
+12:25 μμ>>> Saved server settings
+12:25 μμ>>> ERROR:  Could not save the settings!
+System.NullReferenceException: Δεν έχει οριστεί αναφορά αντικειμένου σε μια παρουσία αντικειμένου.
+   σε Tommy.TomlNode.op_Implicit(TomlNode value)
+   σε BeamMP_Tool.Form1.loadCfg() στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 489
+   σε BeamMP_Tool.Form1.button2_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 749
+   σε System.Windows.Forms.Control.OnClick(EventArgs e)
+   σε System.Windows.Forms.Button.PerformClick()
+   σε BeamMP_Tool.Form1.saveBtn_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 861
+12:26 μμ>>> Saved server settings
+12:32 μμ>>> Saved server settings
+12:33 μμ>>> Saved server settings
+12:33 μμ>>> Saved server settings
+12:33 μμ>>> Saved server settings
+12:33 μμ>>> Saved server settings
+12:34 μμ>>> Saved server settings
+12:34 μμ>>> Saved server settings
+12:34 μμ>>> Saved server settings
+12:36 μμ>>> Saved server settings
+12:36 μμ>>> Saved server settings
+12:36 μμ>>> Saved server settings
+12:36 μμ>>> Saved server settings
+12:36 μμ>>> Saved server settings
+12:36 μμ>>> Saved server settings
+02:23 μμ>>> Saved server settings
+02:28 μμ>>> Saved server settings
+02:28 μμ>>> Saved server settings
+02:36 μμ>>> Firewall rule creation success
+02:36 μμ>>> Firewall rule creation cancelled/failed
+03:20 μμ>>> ERROR: Failed to start the server!
+03:20 μμ>>> ERROR: Failed to stop the server! System.InvalidOperationException: Δεν υπάρχει συσχετισμένη διεργασία με αυτό το αντικείμενο.
+   σε System.Diagnostics.Process.EnsureState(State state)
+   σε System.Diagnostics.Process.EnsureState(State state)
+   σε System.Diagnostics.Process.GetProcessHandle(Int32 access, Boolean throwIfExited)
+   σε System.Diagnostics.Process.Kill()
+   σε BeamMP_Tool.serverControlPnlFrm.startBtn_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\serverControlPnlFrm.cs:γραμμή 204
+03:20 μμ>>> ERROR: Failed to stop the server! System.InvalidOperationException: Δεν υπάρχει συσχετισμένη διεργασία με αυτό το αντικείμενο.
+   σε System.Diagnostics.Process.EnsureState(State state)
+   σε System.Diagnostics.Process.EnsureState(State state)
+   σε System.Diagnostics.Process.GetProcessHandle(Int32 access, Boolean throwIfExited)
+   σε System.Diagnostics.Process.Kill()
+   σε BeamMP_Tool.serverControlPnlFrm.startBtn_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\serverControlPnlFrm.cs:γραμμή 204
+03:23 μμ>>> Server started
+03:23 μμ>>> Server stopped
+03:34 μμ>>> Server started
+03:35 μμ>>> Server stopped
+03:54 μμ>>> Server started
+03:55 μμ>>> Server stopped
+03:55 μμ>>> Server started
+03:55 μμ>>> Server stopped
+03:55 μμ>>> Server started
+03:58 μμ>>> Server started
+03:59 μμ>>> Server started
+04:00 μμ>>> Server stopped
+04:00 μμ>>> Server started
+04:00 μμ>>> Server started
+04:01 μμ>>> Server stopped
+04:04 μμ>>> ERROR: Failed to start the server!
+04:06 μμ>>> ERROR: Failed to start the server!
+04:06 μμ>>> Restarting server...
+04:06 μμ>>> ERROR: Failed to restart the server
+System.InvalidOperationException: Δεν υπάρχει συσχετισμένη διεργασία με αυτό το αντικείμενο.
+   σε System.Diagnostics.Process.EnsureState(State state)
+   σε System.Diagnostics.Process.EnsureState(State state)
+   σε System.Diagnostics.Process.GetProcessHandle(Int32 access, Boolean throwIfExited)
+   σε System.Diagnostics.Process.Kill()
+   σε BeamMP_Tool.serverControlPnlFrm.restartSrv(String restartLogMsg) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\serverControlPnlFrm.cs:γραμμή 164
+04:06 μμ>>> ERROR: Failed to stop the server! System.InvalidOperationException: Δεν υπάρχει συσχετισμένη διεργασία με αυτό το αντικείμενο.
+   σε System.Diagnostics.Process.EnsureState(State state)
+   σε System.Diagnostics.Process.EnsureState(State state)
+   σε System.Diagnostics.Process.GetProcessHandle(Int32 access, Boolean throwIfExited)
+   σε System.Diagnostics.Process.Kill()
+   σε BeamMP_Tool.serverControlPnlFrm.startBtn_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\serverControlPnlFrm.cs:γραμμή 207
+04:08 μμ>>> ERROR: Failed to start the server!
+04:08 μμ>>> ERROR: Failed to stop the server! System.InvalidOperationException: Δεν υπάρχει συσχετισμένη διεργασία με αυτό το αντικείμενο.
+   σε System.Diagnostics.Process.EnsureState(State state)
+   σε System.Diagnostics.Process.EnsureState(State state)
+   σε System.Diagnostics.Process.GetProcessHandle(Int32 access, Boolean throwIfExited)
+   σε System.Diagnostics.Process.Kill()
+   σε BeamMP_Tool.serverControlPnlFrm.startBtn_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\serverControlPnlFrm.cs:γραμμή 207
+04:15 μμ>>> Server started
+04:19 μμ>>> Server started
+04:21 μμ>>> Server stopped
+04:37 μμ>>> Saved server settings
+04:39 μμ>>> Saved server settings
+04:39 μμ>>> Saved server settings
+04:39 μμ>>> Saved server settings
+04:41 μμ>>> Saved server settings
+04:42 μμ>>> Saved server settings
+04:42 μμ>>> Saved server settings
+04:43 μμ>>> Saved server settings
+04:45 μμ>>> Saved server settings
+04:46 μμ>>> Saved server settings
+04:46 μμ>>> Saved server settings
+04:46 μμ>>> Saved server settings

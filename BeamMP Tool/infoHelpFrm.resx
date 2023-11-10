@@ -117,22 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>-Hover your cursor over each option to view some information about it.
--When a mod or a plugin has red text it means its deactivated.
--The "Save" button only saves the "ServerConfig.toml" file, including 
- the selected map. The plugins and the mods are activated-deactivated
- instantly and you don't have to click the "Save" button.
--Hover your mouse over maps and mods to see their filename.</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>If a new version of BeamMP server is released and something breaks,
 just DM me on discord and i will (probably) take immediate action.
 I will probably not accept friend requests so if you want to DM me you will
 have to join the official BeamMP discord server.</value>
   </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>➤Hover your cursor over each option to view some information about it.
+➤When a mod or a plugin has red text it means its deactivated.
+➤The "Save" button only saves the "ServerConfig.toml" file, including 
+ the selected map. Anything else is saved instantly and does not require
+ it to be clicked. The plugins and mods for example don't need it.
+➤Click the "Tools" button to easily create the required firewall rules.
+➤Hover your mouse over maps and mods to see their filename.</value>
+  </data>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>Version 2.2 (15/1/2023)
+    <value>Version 3.0 (10/5/2023)
+ -Total UI Redesign.
+ -Added ability to easily edit and customize server name and description.
+ -Added button in Tools to easily create the required firewall rules.
+ -Added button to find .zip file of currently loaded map.
+ -Added button to open the server's ROOT folder.
+ -Added visible countdown timer for auto restart.
+ -Improved Auto restart timer accuracy.
+ -Auto restart timer now accepts minutes too.
+ -Added more options from the config file (Misc,HTTP etc.).
+ -Small bug fixes.
+
+Version 2.3 (15/1/2023)
+ -Added support for maps with .mis extension.
+ -Bug fixes and small improvements to the logger.
+
+Version 2.2 (15/1/2023)
  -Added Johnson Valley and old Gridmap maps
 
 Version 2.1.1

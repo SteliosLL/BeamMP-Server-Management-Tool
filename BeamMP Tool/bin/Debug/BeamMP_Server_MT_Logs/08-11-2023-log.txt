@@ -1,0 +1,16 @@
+08:24 μμ>>> Saved server settings
+08:24 μμ>>> Saved server settings
+08:25 μμ>>> Saved server settings
+08:25 μμ>>> Saved server settings
+10:02 μμ>>> ERROR:  Could not save the settings!
+System.ArgumentOutOfRangeException: Ο δείκτης και το μήκος πρέπει να αναφέρονται σε μια θέση εντός της συμβολοσειράς.
+Όνομα παραμέτρου: length
+   σε System.String.Substring(Int32 startIndex, Int32 length)
+   σε BeamMP_Tool.Form1.RTFtoBeamMP_conv(RichTextBox RTF) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 892
+   σε BeamMP_Tool.Form1.saveBtn_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 1156
+10:03 μμ>>> ERROR:  Could not save the settings!
+System.ArgumentOutOfRangeException: Η τιμή για το μήκος δεν μπορεί να είναι μικρότερη από το μηδέν.
+Όνομα παραμέτρου: length
+   σε System.String.Substring(Int32 startIndex, Int32 length)
+   σε BeamMP_Tool.Form1.RTFtoBeamMP_conv(RichTextBox RTF) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 892
+   σε BeamMP_Tool.Form1.saveBtn_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 1156

@@ -11,7 +11,7 @@
     <Setting Name="checkRestartCfgTimer" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="restartTimerHours" Type="System.Int32" Scope="User">
+    <Setting Name="restartTimerMins" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="checkRestartCfgTimerSeconds" Type="System.Int32" Scope="User">
@@ -21,6 +21,21 @@
       <Value Profile="(Default)">Resources</Value>
     </Setting>
     <Setting Name="checkModPluginChanges" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="dontshowMsgOpenMapsFold" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="dontshowMsgSave" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="dontshowMsgSSL" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="dontshowMsgNewPort" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="dontshowMsgFIRSTSTARTUPNOTE" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
