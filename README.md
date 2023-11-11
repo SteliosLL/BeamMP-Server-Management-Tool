@@ -5,7 +5,8 @@
 <ins>**Installation instructions:**</ins> Simply copy and paste the executable inside your BeamMP server directory.
 
 # **Preview:**
-![image](https://user-images.githubusercontent.com/55713334/162746418-5a411f6a-f3f9-4835-96b4-d7e357c73633.png)
+![εικόνα](https://github.com/SteliosLL/BeamMP-Server-Management-Tool/assets/55713334/2f1e852d-27f7-4346-9987-3674e17d098a)
+![εικόνα](https://github.com/SteliosLL/BeamMP-Server-Management-Tool/assets/55713334/520cc19b-fcb5-4352-9c04-165cc032a734)
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=FFFSN8XZHVWRU)
 
