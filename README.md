@@ -1,6 +1,6 @@
 ![Github All Releases](https://img.shields.io/github/downloads/SteliosLL/BeamMP-Server-Management-Tool/total.svg)
 
-<ins>**Description:**</ins> This small program will help you edit your server’s settings quick and easy, like the server name, description, port, auth key etc. It makes changing maps very quick and easy. Simply select the one you like and save the settings! It also supports custom maps! You aren’t limited to the default beamng ones. It also has other useful features like mod and plugin management, server start-stop, restart timer etc.
+<ins>**Description:**</ins> This small program will help you edit your server’s settings quick and easy, like the server name, description, port, auth key etc. It makes changing maps very quick and easy. Simply select the one you like and save the settings! It also supports custom maps! You aren’t limited to the default beamng ones. It has other useful features like mod and plugin management, server start-stop, restart timer, server name styling etc.
 
 <ins>**Installation instructions:**</ins> Simply copy and paste the executable inside your BeamMP server directory.
 
