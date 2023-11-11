@@ -71,7 +71,7 @@ namespace BeamMP_Tool
 
         }
         public Process beamMPServer;
-        private void startServer()
+        private bool startServer()
         {
             callingFrm.InvokeIfRequired(outputTxtBox, () => { outputTxtBox.Clear(); });
             callingFrm.InvokeIfRequired(lrgConslFrm.outputTxtBox, () => { lrgConslFrm.outputTxtBox.Clear(); });
@@ -95,6 +95,7 @@ namespace BeamMP_Tool
 
                 checkIfSrvIsRunning();
                 callingFrm.appendLog("Server started");
+                return true;
             }
             catch (Exception)
             {
@@ -104,6 +105,7 @@ namespace BeamMP_Tool
                 startBtn.Text = "Start";
                 startBtn.ForeColor = SystemColors.Control;
                 enableCtrls_SrvState(false);
+                return false;
             }
         }
         private void p_OutputDataReceived(object sender, DataReceivedEventArgs e)
@@ -193,7 +195,7 @@ namespace BeamMP_Tool
                     }
                     else return;
                 }
-                startServer();
+                if (!startServer()) return;
                 startBtn.Text = "Stop";
                 startBtn.ForeColor = Color.Red;
                 enableCtrls_SrvState(true);

@@ -1,8 +1,0 @@
-01:41 πμ>>> ERROR:  Could not save the settings!
-System.NullReferenceException: Δεν έχει οριστεί αναφορά αντικειμένου σε μια παρουσία αντικειμένου.
-   σε BeamMP_Tool.Form1.saveBtn_Click(Object sender, EventArgs e) στο E:\My files\My Projects\Coding\VS Projects\BeamMP Tool -copy2\BeamMP Tool\Form1.cs:γραμμή 797
-01:43 πμ>>> Saved server settings
-01:44 πμ>>> Saved server settings
-01:44 πμ>>> Saved server settings
-01:44 πμ>>> Saved server settings
-01:48 πμ>>> Saved server settings

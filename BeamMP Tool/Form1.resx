@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAw
-        4QAAAk1TRnQBSQFMAwEBAAFwAQoBcAEKAW4BAAFBAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABuAEB
+        4QAAAk1TRnQBSQFMAwEBAAF4AQoBeAEKAW4BAAFBAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABuAEB
         AgABQQMAAQEBAAEgBQAB4AG+AQERAAOAAf4B9wHAAa8B/wH3AcABrwH/AfcBwAGvAf8B9wHAAa8B/wH3
         AcABrwH/AfcBwAGvAf8B9wHAAa8B/wH3AcABrwH/AfcBwAGvAf8B9wHAAa8B/wH3AcABrwH/AfcBwAGv
         Af8B9wHAAa8B/wH3AcABrwH/AfcBwAGvAf8B9wHAAa8B/wH3AcABrwH/AfcBwAGvAf8B9wHAAa8B/wH3
@@ -1096,7 +1096,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABw
-        uw0AAk1TRnQBSQFMAgEBEAEAAXgBCgF4AQoBbgEAAUEBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAG4
+        uw0AAk1TRnQBSQFMAgEBEAEAAYABCgGAAQoBbgEAAUEBAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAG4
         AQECAAFFAQECAAEBAQABIAUAAWABugEI/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A
         /wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A
         /wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A
@@ -18142,6 +18142,28 @@
   <data name="sendErrorsChckB.ToolTip" xml:space="preserve">
     <value>If Send Errors is checked, the server will send helpful info about crashes and other issues back to the BeamMP developers. This info may include your config, who is on your server at the time of the error, and similar general information. This kind of data is vital in helping us diagnose and fix issues faster. This has no impact on server performance. You can opt-out of this system by unchecking this</value>
   </data>
+  <data name="customDescBtn2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAARRJREFUOE+9zr9LAmEcx/H7l4L+hCgJnBqaghsES+h0ECKuDCytqyMJuhMLGo6i
+        IvBMENFqqChuChyOfpD9nDJpKE5seodhc/c09N6+PLw+PNK/d6KqHIRCdE+xHOeM60WNujJOPhgUGxlN
+        hVnaytB4aeDmcpQVxf9AbVemUtykJ95H0kxi23n/+HxjmA93Hjj+Hun8pPv0e4fGEG8XSWjbeE8aeqTX
+        Py5qgzSdKfB2aD2kxfHzURRaFu37GTFsqf3clSPQXMG7nRTDldUYlwUZXnU+rxQxfLqd4GY/Do8ZPDcs
+        hjvVCwmorfNenWVvbkQMl8wJcJZxsmNYekwMZ02DqhFlbVoWgz8NBAIspFN/w5IkfQFnQLd0mHS/QgAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="customNameBtn2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAARRJREFUOE+9zr9LAmEcx/H7l4L+hCgJnBqaghsES+h0ECKuDCytqyMJuhMLGo6i
+        IvBMENFqqChuChyOfpD9nDJpKE5seodhc/c09N6+PLw+PNK/d6KqHIRCdE+xHOeM60WNujJOPhgUGxlN
+        hVnaytB4aeDmcpQVxf9AbVemUtykJ95H0kxi23n/+HxjmA93Hjj+Hun8pPv0e4fGEG8XSWjbeE8aeqTX
+        Py5qgzSdKfB2aD2kxfHzURRaFu37GTFsqf3clSPQXMG7nRTDldUYlwUZXnU+rxQxfLqd4GY/Do8ZPDcs
+        hjvVCwmorfNenWVvbkQMl8wJcJZxsmNYekwMZ02DqhFlbVoWgz8NBAIspFN/w5IkfQFnQLd0mHS/QgAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="selectCustomStartFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>468, 6</value>
   </metadata>
@@ -18156,7 +18178,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACm
-        GAAAAk1TRnQBSQFMAwEBAAHgAQIB4AECASABAAEgAQAE/wEZAQAI/wFCAU0BNgcAATYDAAEoAwABgAMA
+        GAAAAk1TRnQBSQFMAwEBAAHoAQIB6AECASABAAEgAQAE/wEZAQAI/wFCAU0BNgcAATYDAAEoAwABgAMA
         ASADAAEBAQABGAYAATASAAH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3
         AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3
         AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3AcABrwH3
@@ -18356,28 +18378,6 @@
         DgCQJXQAgCyhAwBkCR0AIEvoAABVJ6EDAFQ9Cx0AoOp+hs7r1SIAwN7Nvllm6NxeLAIAFNwe/s94ebza
         BADYq8c1cc4zFo5z8eIAAMAezZ45ronzdcbGvMbyzw4AsDezXz6vq76bcWgZ7ofn4TRsfQwA4KfNTpm9
         MrtlWVPmYg6Hd6XLxzcFQ7tsAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="customDescBtn2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAARRJREFUOE+9zr9LAmEcx/H7l4L+hCgJnBqaghsES+h0ECKuDCytqyMJuhMLGo6i
-        IvBMENFqqChuChyOfpD9nDJpKE5seodhc/c09N6+PLw+PNK/d6KqHIRCdE+xHOeM60WNujJOPhgUGxlN
-        hVnaytB4aeDmcpQVxf9AbVemUtykJ95H0kxi23n/+HxjmA93Hjj+Hun8pPv0e4fGEG8XSWjbeE8aeqTX
-        Py5qgzSdKfB2aD2kxfHzURRaFu37GTFsqf3clSPQXMG7nRTDldUYlwUZXnU+rxQxfLqd4GY/Do8ZPDcs
-        hjvVCwmorfNenWVvbkQMl8wJcJZxsmNYekwMZ02DqhFlbVoWgz8NBAIspFN/w5IkfQFnQLd0mHS/QgAA
-        AABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="customNameBtn2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAARRJREFUOE+9zr9LAmEcx/H7l4L+hCgJnBqaghsES+h0ECKuDCytqyMJuhMLGo6i
-        IvBMENFqqChuChyOfpD9nDJpKE5seodhc/c09N6+PLw+PNK/d6KqHIRCdE+xHOeM60WNujJOPhgUGxlN
-        hVnaytB4aeDmcpQVxf9AbVemUtykJ95H0kxi23n/+HxjmA93Hjj+Hun8pPv0e4fGEG8XSWjbeE8aeqTX
-        Py5qgzSdKfB2aD2kxfHzURRaFu37GTFsqf3clSPQXMG7nRTDldUYlwUZXnU+rxQxfLqd4GY/Do8ZPDcs
-        hjvVCwmorfNenWVvbkQMl8wJcJZxsmNYekwMZ02DqhFlbVoWgz8NBAIspFN/w5IkfQFnQLd0mHS/QgAA
-        AABJRU5ErkJggg==
 </value>
   </data>
   <data name="saveBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

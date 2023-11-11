@@ -81,11 +81,15 @@ namespace BeamMP_Tool
             { srvCtrlPnlFrm.srvStartFile = Properties.Settings.Default.srvStartFile; selectToolStripMenuItem.ToolTipText = Path.GetFileName(Properties.Settings.Default.srvStartFile); selectedSrvStartFileLblBtn.Text = "Selected: " + Path.GetFileName(Properties.Settings.Default.srvStartFile); }
             //  checkRestartCfgTimer();
             // restartTimer();
+
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
             bool dontshowAgain = Properties.Settings.Default.dontshowMsgFIRSTSTARTUPNOTE;
             showMsgBoxDontshow(ref dontshowAgain, "Make sure this program's executable is in the SAME FOLDER as the BeamMP Server executable.", "IMPORTANT NOTE", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Properties.Settings.Default.dontshowMsgFIRSTSTARTUPNOTE = dontshowAgain;
             Properties.Settings.Default.Save();
-
         }
         private void setControls()
         {
@@ -1768,7 +1772,7 @@ namespace BeamMP_Tool
 
 
         private void customSmoothBtn2_Click_6(object sender, EventArgs e)
-        {//in case of error add func
+        {//add general func for all errors. Put action and error message and args and let it do everything else like logging<-------------------
             try
             {
                 Process.Start(Application.StartupPath);
@@ -1829,5 +1833,6 @@ namespace BeamMP_Tool
             if (customNamefrm == null) { customNamefrm = new customizeNameFrm(this, descTxtBox, "Customize Server Description"); }
             customNamefrm.ShowDialog();
         }
+
     }
 }

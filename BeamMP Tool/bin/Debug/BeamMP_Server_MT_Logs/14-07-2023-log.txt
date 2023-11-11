@@ -1,2 +1,0 @@
-04:02 μμ>>> Server started
-04:02 μμ>>> Server stopped
