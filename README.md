@@ -10,3 +10,6 @@
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=FFFSN8XZHVWRU)
 
+You can use the Server Creation Tool to automatically download the BeamMP Server.
+https://github.com/Zeromix9/Server-Creation-Tool
+
