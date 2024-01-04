@@ -117,23 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>If a new version of BeamMP server is released and something breaks,
-just DM me on discord and i will (probably) take immediate action.
-I will probably not accept friend requests so if you want to DM me you will
-have to join the official BeamMP discord server.</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>➤Hover your cursor over each option to view some information about it.
-➤When a mod or a plugin has red text it means its deactivated.
-➤The "Save" button only saves the "ServerConfig.toml" file, including 
- the selected map. Anything else is saved instantly and does not require
- it to be clicked. The plugins and mods for example don't need it.
-➤Click the "Tools" button to easily create the required firewall rules.
-➤Hover your mouse over maps and mods to see their filename.</value>
-  </data>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>Version 3.0 (11/11/2023)
+    <value>Version 3.1 (4/1/2024)
+ -Added the "Tags" field.
+ -Improved error window when a field from the config file is missing.
+ -The "Reload" button now blinks if the config file is missing.
+ -Removed the HTTP server fields.
+
+Version 3.0 (11/11/2023)
  -Total UI Redesign.
  -Added ability to easily edit and customize server name and description.
  -Added button in Tools to easily create the required firewall rules.
@@ -182,7 +173,8 @@ Version 2.0
  -Removed ability to view larger map previews when you right click on maps
 
 Version 1.0
- -BeamMP Server Setup Tool released</value>
+ -BeamMP Server Setup Tool released
+</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -440,5 +432,20 @@ Version 1.0
         AAAAfwAA/gAAAAB/AAD/gAAAAf8AAP+AAAAB/wAA/+AAAAf/AAD/4AAAB/8AAP/+AAB//wAA//4AAH//
         AAD///////8AAP///////wAA////////AAA=
 </value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>➤Hover your cursor over each option to view some information about it.
+➤When a mod or a plugin has red text it means its deactivated.
+➤The "Save" button only saves the "ServerConfig.toml" file, including 
+ the selected map. Anything else is saved instantly and does not require
+ it to be clicked. The plugins and mods for example don't need it.
+➤Click the "Tools" button to easily create the required firewall rules.
+➤Hover your mouse over maps and mods to see their filename.</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>If a new version of BeamMP server is released and something breaks,
+just DM me on discord and i will (probably) take immediate action.
+I will probably not accept friend requests so if you want to DM me you will
+have to join the official BeamMP discord server.</value>
   </data>
 </root>

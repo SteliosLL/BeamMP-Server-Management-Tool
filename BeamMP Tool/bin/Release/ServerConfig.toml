@@ -1,0 +1,23 @@
+# This is the BeamMP-Server config file.
+# Help & Documentation: `https://wiki.beammp.com/en/home/server-maintenance`
+# IMPORTANT: Fill in the AuthKey with the key you got from `https://keymaster.beammp.com/` on the left under "Keys"
+
+[General]
+Name = "BeamMP suss Server"
+Port = 30814
+AuthKey = ""
+LogChat = true
+Tags = "Freeroam, babaghg"
+Debug = false
+Private = true
+MaxCars = 1
+MaxNwordsCars = 1
+MaxPlayers = 8
+Map = "/levels/gridmap_v2/info.json"
+Description = "BeamMP Default Description"
+ResourceFolder = "Resources"
+
+[Misc]
+ImScaredOfUpdates = false
+SendErrorsShowMessage = true
+SendErrors = true

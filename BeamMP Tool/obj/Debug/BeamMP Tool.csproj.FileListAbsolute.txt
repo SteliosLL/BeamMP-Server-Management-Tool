@@ -139,3 +139,38 @@ E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP
 E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\obj\Debug\BeamMP_Tool.setAutoMsg.resources
 E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\obj\Debug\Interop.NetFwTypeLib.dll
 E:\My files\My Projects\Coding\VS Projects\BeammMPTool\BeamMP Tool -copy2\BeamMP Tool\obj\Debug\BeamMP Tool.csproj.ResolveComReference.cache
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\bin\Debug\BeamMP Server Management Tool.exe.config
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\bin\Debug\BeamMP Server Management Tool.exe
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\bin\Debug\BeamMP Server Management Tool.pdb
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\bin\Debug\System.Buffers.xml
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\bin\Debug\System.Memory.xml
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Tool.csproj.AssemblyReference.cache
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Tool.csproj.SuggestedBindingRedirects.cache
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Server Management Tool.exe.config
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\Interop.NetFwTypeLib.dll
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Tool.csproj.ResolveComReference.cache
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.baseFormUsrCtrl.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.customBtn.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.customizeNameFrm.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.customSmoothBtn.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.Form1.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.infoHelpFrm.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.largeSrvConsoleForm.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.logFrm.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.msgBox.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.Properties.Resources.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.restartTimerForm.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.searchFrm.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.serverControlPnlFrm.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP_Tool.setAutoMsg.resources
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Tool.csproj.GenerateResource.cache
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Tool.csproj.CoreCompileInputs.cache
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Tool.csproj.Fody.CopyLocal.cache
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Tool.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Tool.csproj.CopyComplete
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Server Management Tool.exe
+C:\Users\Stelios PC\Desktop\BeamMP-Server-Management-Tool-master\BeamMP Tool\obj\Debug\BeamMP Server Management Tool.pdb

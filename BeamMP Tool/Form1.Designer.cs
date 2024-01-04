@@ -57,16 +57,7 @@ namespace BeamMP_Tool
             this.sendErrorsChckB = new System.Windows.Forms.CheckBox();
             this.onOffSendErrorsChckB = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.otherBtn = new BeamMP_Tool.customSmoothBtn();
-            this.infohelpBtn = new BeamMP_Tool.customSmoothBtn();
-            this.reloadCfgBtn = new BeamMP_Tool.customSmoothBtn();
-            this.searchMapsBtn = new BeamMP_Tool.customSmoothBtn();
-            this.customDescBtn2 = new BeamMP_Tool.customSmoothBtn();
-            this.customNameBtn2 = new BeamMP_Tool.customSmoothBtn();
-            this.searchPluginsBtn = new BeamMP_Tool.customSmoothBtn();
-            this.button4 = new BeamMP_Tool.customSmoothBtn();
-            this.searchModsBtn = new BeamMP_Tool.customSmoothBtn();
-            this.openModsBtn = new BeamMP_Tool.customSmoothBtn();
+            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -77,37 +68,25 @@ namespace BeamMP_Tool
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.srvNamePnlLbl = new System.Windows.Forms.Label();
-            this.activateModBtn = new BeamMP_Tool.customSmoothBtn();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.activatePluginsBtn = new BeamMP_Tool.customSmoothBtn();
             this.label6 = new System.Windows.Forms.Label();
             this.pluginlistView = new System.Windows.Forms.ListView();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.customSmoothBtn2 = new BeamMP_Tool.customSmoothBtn();
-            this.miscTabBtn = new BeamMP_Tool.customSmoothBtn();
-            this.editConf = new BeamMP_Tool.customSmoothBtn();
-            this.httpTabBtn = new BeamMP_Tool.customSmoothBtn();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.currentMapZipBtn = new BeamMP_Tool.customSmoothBtn();
+            this.mapsPnl = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.customSmoothBtn1 = new BeamMP_Tool.customSmoothBtn();
             this.mapsListView = new System.Windows.Forms.ListView();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.generalSettingsPnl = new System.Windows.Forms.Panel();
+            this.tagsTxtBox = new System.Windows.Forms.TextBox();
             this.descTxtBox = new System.Windows.Forms.RichTextBox();
             this.nameTxtBox = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.maxCarsTxtBox = new System.Windows.Forms.TextBox();
             this.maxPlayersTxtBox = new System.Windows.Forms.TextBox();
-            this.maxCarsDropBtn = new BeamMP_Tool.customSmoothBtn();
-            this.maxPlayersDropBtn = new BeamMP_Tool.customSmoothBtn();
             this.portTxtBox = new System.Windows.Forms.TextBox();
             this.authTxtBox = new System.Windows.Forms.TextBox();
-            this.saveBtn = new BeamMP_Tool.customSmoothBtn();
             this.label7 = new System.Windows.Forms.Label();
             this.miscPnl = new System.Windows.Forms.Panel();
             this.httpPnl = new System.Windows.Forms.Panel();
-            this.selectSSLKeyBtn = new BeamMP_Tool.customSmoothBtn();
-            this.selectSSLCertBtn = new BeamMP_Tool.customSmoothBtn();
             this.httpSrvPortTxtB = new System.Windows.Forms.TextBox();
             this.httpSrvIpTxtB = new System.Windows.Forms.TextBox();
             this.otherMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -120,6 +99,29 @@ namespace BeamMP_Tool
             this.toolTipNoBallon = new System.Windows.Forms.ToolTip(this.components);
             this.customSmoothBtn3 = new BeamMP_Tool.customSmoothBtn();
             this.showHideSrvPnlBtn = new BeamMP_Tool.customSmoothBtn();
+            this.otherBtn = new BeamMP_Tool.customSmoothBtn();
+            this.infohelpBtn = new BeamMP_Tool.customSmoothBtn();
+            this.customSmoothBtn2 = new BeamMP_Tool.customSmoothBtn();
+            this.miscTabBtn = new BeamMP_Tool.customSmoothBtn();
+            this.reloadCfgBtn = new BeamMP_Tool.customSmoothBtn();
+            this.editConf = new BeamMP_Tool.customSmoothBtn();
+            this.httpTabBtn = new BeamMP_Tool.customSmoothBtn();
+            this.currentMapZipBtn = new BeamMP_Tool.customSmoothBtn();
+            this.customSmoothBtn1 = new BeamMP_Tool.customSmoothBtn();
+            this.searchMapsBtn = new BeamMP_Tool.customSmoothBtn();
+            this.customDescBtn2 = new BeamMP_Tool.customSmoothBtn();
+            this.customNameBtn2 = new BeamMP_Tool.customSmoothBtn();
+            this.maxCarsDropBtn = new BeamMP_Tool.customSmoothBtn();
+            this.maxPlayersDropBtn = new BeamMP_Tool.customSmoothBtn();
+            this.saveBtn = new BeamMP_Tool.customSmoothBtn();
+            this.selectSSLKeyBtn = new BeamMP_Tool.customSmoothBtn();
+            this.selectSSLCertBtn = new BeamMP_Tool.customSmoothBtn();
+            this.searchPluginsBtn = new BeamMP_Tool.customSmoothBtn();
+            this.activatePluginsBtn = new BeamMP_Tool.customSmoothBtn();
+            this.button4 = new BeamMP_Tool.customSmoothBtn();
+            this.searchModsBtn = new BeamMP_Tool.customSmoothBtn();
+            this.activateModBtn = new BeamMP_Tool.customSmoothBtn();
+            this.openModsBtn = new BeamMP_Tool.customSmoothBtn();
             this.baseFormUsrCtrl1 = new BeamMP_Tool.baseFormUsrCtrl();
             ((System.ComponentModel.ISupportInitialize)(this.sslKeyPicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sslCertPicBox)).BeginInit();
@@ -127,8 +129,8 @@ namespace BeamMP_Tool
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.mapsPnl.SuspendLayout();
+            this.generalSettingsPnl.SuspendLayout();
             this.miscPnl.SuspendLayout();
             this.httpPnl.SuspendLayout();
             this.otherMenu.SuspendLayout();
@@ -165,7 +167,7 @@ namespace BeamMP_Tool
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.MediumOrchid;
-            this.linkLabel1.Location = new System.Drawing.Point(138, 102);
+            this.linkLabel1.Location = new System.Drawing.Point(138, 103);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(53, 13);
             this.linkLabel1.TabIndex = 11;
@@ -178,7 +180,7 @@ namespace BeamMP_Tool
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(3, 102);
+            this.label5.Location = new System.Drawing.Point(3, 103);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 13);
             this.label5.TabIndex = 0;
@@ -191,7 +193,7 @@ namespace BeamMP_Tool
             this.maxCarsCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.maxCarsCombo.ForeColor = System.Drawing.SystemColors.Control;
             this.maxCarsCombo.FormattingEnabled = true;
-            this.maxCarsCombo.Location = new System.Drawing.Point(394, 83);
+            this.maxCarsCombo.Location = new System.Drawing.Point(394, 72);
             this.maxCarsCombo.MaxDropDownItems = 10;
             this.maxCarsCombo.Name = "maxCarsCombo";
             this.maxCarsCombo.Size = new System.Drawing.Size(65, 21);
@@ -202,7 +204,7 @@ namespace BeamMP_Tool
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(370, 65);
+            this.label4.Location = new System.Drawing.Point(370, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 13);
             this.label4.TabIndex = 6;
@@ -215,7 +217,7 @@ namespace BeamMP_Tool
             this.maxPlayerCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.maxPlayerCombo.ForeColor = System.Drawing.SystemColors.Control;
             this.maxPlayerCombo.FormattingEnabled = true;
-            this.maxPlayerCombo.Location = new System.Drawing.Point(394, 33);
+            this.maxPlayerCombo.Location = new System.Drawing.Point(394, 22);
             this.maxPlayerCombo.MaxDropDownItems = 10;
             this.maxPlayerCombo.Name = "maxPlayerCombo";
             this.maxPlayerCombo.Size = new System.Drawing.Size(65, 21);
@@ -226,7 +228,7 @@ namespace BeamMP_Tool
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(401, 15);
+            this.label3.Location = new System.Drawing.Point(401, 4);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 4;
@@ -260,7 +262,7 @@ namespace BeamMP_Tool
             this.privChckBox.AutoSize = true;
             this.privChckBox.BackColor = System.Drawing.Color.Transparent;
             this.privChckBox.ForeColor = System.Drawing.SystemColors.Control;
-            this.privChckBox.Location = new System.Drawing.Point(505, 49);
+            this.privChckBox.Location = new System.Drawing.Point(505, 42);
             this.privChckBox.Name = "privChckBox";
             this.privChckBox.Size = new System.Drawing.Size(59, 17);
             this.privChckBox.TabIndex = 11;
@@ -279,7 +281,7 @@ namespace BeamMP_Tool
             this.debugChckBox.AutoSize = true;
             this.debugChckBox.BackColor = System.Drawing.Color.Transparent;
             this.debugChckBox.ForeColor = System.Drawing.SystemColors.Control;
-            this.debugChckBox.Location = new System.Drawing.Point(505, 81);
+            this.debugChckBox.Location = new System.Drawing.Point(505, 74);
             this.debugChckBox.Name = "debugChckBox";
             this.debugChckBox.Size = new System.Drawing.Size(78, 17);
             this.debugChckBox.TabIndex = 12;
@@ -300,7 +302,7 @@ namespace BeamMP_Tool
             this.logChatChckB.AutoSize = true;
             this.logChatChckB.BackColor = System.Drawing.Color.Transparent;
             this.logChatChckB.ForeColor = System.Drawing.SystemColors.Control;
-            this.logChatChckB.Location = new System.Drawing.Point(505, 16);
+            this.logChatChckB.Location = new System.Drawing.Point(505, 9);
             this.logChatChckB.Name = "logChatChckB";
             this.logChatChckB.Size = new System.Drawing.Size(69, 17);
             this.logChatChckB.TabIndex = 32;
@@ -430,290 +432,17 @@ namespace BeamMP_Tool
             this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.Visible = false;
             // 
-            // otherBtn
+            // label11
             // 
-            this.otherBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.otherBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.otherBtn.Can_Focus = true;
-            this.otherBtn.ClickTransitionSpeed = 60;
-            this.otherBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.otherBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.otherBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.otherBtn.EnableSmoothTransitions = true;
-            this.otherBtn.FlatAppearance.BorderSize = 0;
-            this.otherBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.otherBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.otherBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.otherBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.otherBtn.ForeColor = System.Drawing.Color.LawnGreen;
-            this.otherBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.otherBtn.Location = new System.Drawing.Point(508, 33);
-            this.otherBtn.Name = "otherBtn";
-            this.otherBtn.Size = new System.Drawing.Size(71, 24);
-            this.otherBtn.TabIndex = 34;
-            this.otherBtn.Text = "Tools   ▼";
-            this.otherBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolTip1.SetToolTip(this.otherBtn, "Reloading will clear any unsaved changes!");
-            this.otherBtn.TransitionSpeed = 130;
-            this.otherBtn.UseVisualStyleBackColor = false;
-            this.otherBtn.Click += new System.EventHandler(this.customSmoothBtn2_Click_4);
-            // 
-            // infohelpBtn
-            // 
-            this.infohelpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(54)))), ((int)(((byte)(84)))));
-            this.infohelpBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.infohelpBtn.BackgroundImage = global::BeamMP_Tool.Properties.Resources._7cs9Ed_gradient1RESIZED1_TOP_PANEL2;
-            this.infohelpBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.infohelpBtn.Can_Focus = true;
-            this.infohelpBtn.ClickTransitionSpeed = 60;
-            this.infohelpBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.infohelpBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.infohelpBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.infohelpBtn.EnableSmoothTransitions = true;
-            this.infohelpBtn.FlatAppearance.BorderSize = 0;
-            this.infohelpBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.infohelpBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.infohelpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.infohelpBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.infohelpBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.infohelpBtn.Image = global::BeamMP_Tool.Properties.Resources.icons8_info_24;
-            this.infohelpBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.infohelpBtn.Location = new System.Drawing.Point(641, 0);
-            this.infohelpBtn.Name = "infohelpBtn";
-            this.infohelpBtn.Size = new System.Drawing.Size(56, 25);
-            this.infohelpBtn.TabIndex = 27;
-            this.infohelpBtn.Text = "Info";
-            this.infohelpBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolTip1.SetToolTip(this.infohelpBtn, "Info-Help");
-            this.infohelpBtn.TransitionSpeed = 130;
-            this.infohelpBtn.UseVisualStyleBackColor = false;
-            this.infohelpBtn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // reloadCfgBtn
-            // 
-            this.reloadCfgBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.reloadCfgBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.reloadCfgBtn.Can_Focus = true;
-            this.reloadCfgBtn.ClickTransitionSpeed = 60;
-            this.reloadCfgBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.reloadCfgBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.reloadCfgBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.reloadCfgBtn.EnableSmoothTransitions = true;
-            this.reloadCfgBtn.FlatAppearance.BorderSize = 0;
-            this.reloadCfgBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.reloadCfgBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.reloadCfgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reloadCfgBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.reloadCfgBtn.ForeColor = System.Drawing.Color.LawnGreen;
-            this.reloadCfgBtn.Image = global::BeamMP_Tool.Properties.Resources.captcha16;
-            this.reloadCfgBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.reloadCfgBtn.Location = new System.Drawing.Point(338, -1);
-            this.reloadCfgBtn.Name = "reloadCfgBtn";
-            this.reloadCfgBtn.Size = new System.Drawing.Size(68, 24);
-            this.reloadCfgBtn.TabIndex = 27;
-            this.reloadCfgBtn.Text = "Reload";
-            this.reloadCfgBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolTip1.SetToolTip(this.reloadCfgBtn, "Reloading will clear any current unsaved changes and reload the ServerConfig.toml" +
-        " file.");
-            this.reloadCfgBtn.TransitionSpeed = 130;
-            this.reloadCfgBtn.UseVisualStyleBackColor = false;
-            this.reloadCfgBtn.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // searchMapsBtn
-            // 
-            this.searchMapsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.searchMapsBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.searchMapsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.searchMapsBtn.Can_Focus = true;
-            this.searchMapsBtn.ClickTransitionSpeed = 60;
-            this.searchMapsBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.searchMapsBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.searchMapsBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.searchMapsBtn.EnableSmoothTransitions = true;
-            this.searchMapsBtn.FlatAppearance.BorderSize = 0;
-            this.searchMapsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.searchMapsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.searchMapsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchMapsBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.searchMapsBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.searchMapsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
-            this.searchMapsBtn.Location = new System.Drawing.Point(508, 3);
-            this.searchMapsBtn.Name = "searchMapsBtn";
-            this.searchMapsBtn.Size = new System.Drawing.Size(24, 21);
-            this.searchMapsBtn.TabIndex = 22;
-            this.toolTip1.SetToolTip(this.searchMapsBtn, "Search Mods");
-            this.searchMapsBtn.TransitionSpeed = 130;
-            this.searchMapsBtn.UseVisualStyleBackColor = false;
-            this.searchMapsBtn.Click += new System.EventHandler(this.searchMapsBtn_Click);
-            // 
-            // customDescBtn2
-            // 
-            this.customDescBtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
-            this.customDescBtn2.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.customDescBtn2.Can_Focus = true;
-            this.customDescBtn2.ClickTransitionSpeed = 60;
-            this.customDescBtn2.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.customDescBtn2.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
-            this.customDescBtn2.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.customDescBtn2.EnableSmoothTransitions = true;
-            this.customDescBtn2.FlatAppearance.BorderSize = 0;
-            this.customDescBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.customDescBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.customDescBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customDescBtn2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.customDescBtn2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.customDescBtn2.Image = ((System.Drawing.Image)(resources.GetObject("customDescBtn2.Image")));
-            this.customDescBtn2.Location = new System.Drawing.Point(339, 65);
-            this.customDescBtn2.Name = "customDescBtn2";
-            this.customDescBtn2.Size = new System.Drawing.Size(23, 21);
-            this.customDescBtn2.TabIndex = 38;
-            this.customDescBtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolTip1.SetToolTip(this.customDescBtn2, "Customize the your server\'s description by changing the text color, making it bol" +
-        "d etc.");
-            this.customDescBtn2.TransitionSpeed = 130;
-            this.customDescBtn2.UseVisualStyleBackColor = false;
-            this.customDescBtn2.Visible = false;
-            this.customDescBtn2.Click += new System.EventHandler(this.customDescBtn2_Click);
-            this.customDescBtn2.MouseLeave += new System.EventHandler(this.descTxtBox_MouseLeave);
-            // 
-            // customNameBtn2
-            // 
-            this.customNameBtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
-            this.customNameBtn2.BackgroundBackColor = System.Drawing.Color.Transparent;
-            this.customNameBtn2.Can_Focus = true;
-            this.customNameBtn2.ClickTransitionSpeed = 60;
-            this.customNameBtn2.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.customNameBtn2.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
-            this.customNameBtn2.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.customNameBtn2.EnableSmoothTransitions = true;
-            this.customNameBtn2.FlatAppearance.BorderSize = 0;
-            this.customNameBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.customNameBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.customNameBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customNameBtn2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.customNameBtn2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.customNameBtn2.Image = ((System.Drawing.Image)(resources.GetObject("customNameBtn2.Image")));
-            this.customNameBtn2.Location = new System.Drawing.Point(339, 23);
-            this.customNameBtn2.Name = "customNameBtn2";
-            this.customNameBtn2.Size = new System.Drawing.Size(23, 21);
-            this.customNameBtn2.TabIndex = 37;
-            this.customNameBtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolTip1.SetToolTip(this.customNameBtn2, "Customize the your server\'s name by changing the text color, making it bold etc.");
-            this.customNameBtn2.TransitionSpeed = 130;
-            this.customNameBtn2.UseVisualStyleBackColor = false;
-            this.customNameBtn2.Visible = false;
-            this.customNameBtn2.Click += new System.EventHandler(this.customNameBtn2_Click);
-            this.customNameBtn2.MouseLeave += new System.EventHandler(this.nameTxtBox_MouseLeave);
-            // 
-            // searchPluginsBtn
-            // 
-            this.searchPluginsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.searchPluginsBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.searchPluginsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.searchPluginsBtn.Can_Focus = true;
-            this.searchPluginsBtn.ClickTransitionSpeed = 60;
-            this.searchPluginsBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.searchPluginsBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.searchPluginsBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.searchPluginsBtn.EnableSmoothTransitions = true;
-            this.searchPluginsBtn.FlatAppearance.BorderSize = 0;
-            this.searchPluginsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.searchPluginsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.searchPluginsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchPluginsBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.searchPluginsBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.searchPluginsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
-            this.searchPluginsBtn.Location = new System.Drawing.Point(141, 192);
-            this.searchPluginsBtn.Name = "searchPluginsBtn";
-            this.searchPluginsBtn.Size = new System.Drawing.Size(27, 24);
-            this.searchPluginsBtn.TabIndex = 24;
-            this.toolTip1.SetToolTip(this.searchPluginsBtn, "Search Plugins");
-            this.searchPluginsBtn.TransitionSpeed = 130;
-            this.searchPluginsBtn.UseVisualStyleBackColor = false;
-            this.searchPluginsBtn.Click += new System.EventHandler(this.searchPluginsBtn_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.button4.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.button4.Can_Focus = true;
-            this.button4.ClickTransitionSpeed = 60;
-            this.button4.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.button4.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.button4.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.button4.EnableSmoothTransitions = true;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button4.Image = global::BeamMP_Tool.Properties.Resources._468;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(177, 192);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(135, 24);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "     Open Plugins folder";
-            this.toolTip1.SetToolTip(this.button4, "Put plugins in this folder");
-            this.button4.TransitionSpeed = 130;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // searchModsBtn
-            // 
-            this.searchModsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.searchModsBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.searchModsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.searchModsBtn.Can_Focus = true;
-            this.searchModsBtn.ClickTransitionSpeed = 60;
-            this.searchModsBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.searchModsBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.searchModsBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.searchModsBtn.EnableSmoothTransitions = true;
-            this.searchModsBtn.FlatAppearance.BorderSize = 0;
-            this.searchModsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.searchModsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.searchModsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchModsBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.searchModsBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.searchModsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
-            this.searchModsBtn.Location = new System.Drawing.Point(145, 228);
-            this.searchModsBtn.Name = "searchModsBtn";
-            this.searchModsBtn.Size = new System.Drawing.Size(27, 24);
-            this.searchModsBtn.TabIndex = 21;
-            this.toolTip1.SetToolTip(this.searchModsBtn, "Search Mods");
-            this.searchModsBtn.TransitionSpeed = 130;
-            this.searchModsBtn.UseVisualStyleBackColor = false;
-            this.searchModsBtn.Click += new System.EventHandler(this.searchMods_Click);
-            // 
-            // openModsBtn
-            // 
-            this.openModsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.openModsBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.openModsBtn.Can_Focus = true;
-            this.openModsBtn.ClickTransitionSpeed = 60;
-            this.openModsBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.openModsBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.openModsBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.openModsBtn.EnableSmoothTransitions = true;
-            this.openModsBtn.FlatAppearance.BorderSize = 0;
-            this.openModsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.openModsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.openModsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.openModsBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.openModsBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.openModsBtn.Image = global::BeamMP_Tool.Properties.Resources._468;
-            this.openModsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.openModsBtn.Location = new System.Drawing.Point(184, 228);
-            this.openModsBtn.Name = "openModsBtn";
-            this.openModsBtn.Size = new System.Drawing.Size(125, 24);
-            this.openModsBtn.TabIndex = 17;
-            this.openModsBtn.Text = "     Open mods folder ";
-            this.toolTip1.SetToolTip(this.openModsBtn, "Put any kind of mods in this folder (preferably don\'t put maps here)");
-            this.openModsBtn.TransitionSpeed = 130;
-            this.openModsBtn.UseVisualStyleBackColor = false;
-            this.openModsBtn.Click += new System.EventHandler(this.button2_Click_1);
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.SystemColors.Control;
+            this.label11.Location = new System.Drawing.Point(368, 103);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(34, 13);
+            this.label11.TabIndex = 39;
+            this.label11.Text = "Tags:";
+            this.toolTip1.SetToolTip(this.label11, "Add custom identifying tags to your server to make it easier to find. Format shou" +
+        "ld be TagA,TagB,TagC. Note the comma seperation.");
             // 
             // label12
             // 
@@ -817,33 +546,6 @@ namespace BeamMP_Tool
             this.srvNamePnlLbl.TabIndex = 20;
             this.srvNamePnlLbl.Text = "-Mods (Maps not shown)-";
             // 
-            // activateModBtn
-            // 
-            this.activateModBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.activateModBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.activateModBtn.Can_Focus = true;
-            this.activateModBtn.ClickTransitionSpeed = 60;
-            this.activateModBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.activateModBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.activateModBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.activateModBtn.Enabled = false;
-            this.activateModBtn.EnableSmoothTransitions = true;
-            this.activateModBtn.FlatAppearance.BorderSize = 0;
-            this.activateModBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.activateModBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.activateModBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.activateModBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.activateModBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.activateModBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.activateModBtn.Location = new System.Drawing.Point(56, 228);
-            this.activateModBtn.Name = "activateModBtn";
-            this.activateModBtn.Size = new System.Drawing.Size(77, 24);
-            this.activateModBtn.TabIndex = 19;
-            this.activateModBtn.Text = "Activate";
-            this.activateModBtn.TransitionSpeed = 130;
-            this.activateModBtn.UseVisualStyleBackColor = false;
-            this.activateModBtn.Click += new System.EventHandler(this.activateModBtn_Click);
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
@@ -859,33 +561,6 @@ namespace BeamMP_Tool
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(360, 222);
             this.panel6.TabIndex = 21;
-            // 
-            // activatePluginsBtn
-            // 
-            this.activatePluginsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.activatePluginsBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.activatePluginsBtn.Can_Focus = true;
-            this.activatePluginsBtn.ClickTransitionSpeed = 60;
-            this.activatePluginsBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.activatePluginsBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.activatePluginsBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.activatePluginsBtn.Enabled = false;
-            this.activatePluginsBtn.EnableSmoothTransitions = true;
-            this.activatePluginsBtn.FlatAppearance.BorderSize = 0;
-            this.activatePluginsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.activatePluginsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.activatePluginsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.activatePluginsBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.activatePluginsBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.activatePluginsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.activatePluginsBtn.Location = new System.Drawing.Point(55, 192);
-            this.activatePluginsBtn.Name = "activatePluginsBtn";
-            this.activatePluginsBtn.Size = new System.Drawing.Size(77, 24);
-            this.activatePluginsBtn.TabIndex = 23;
-            this.activatePluginsBtn.Text = "Activate";
-            this.activatePluginsBtn.TransitionSpeed = 130;
-            this.activatePluginsBtn.UseVisualStyleBackColor = false;
-            this.activatePluginsBtn.Click += new System.EventHandler(this.activatePluginsBtn_Click);
             // 
             // label6
             // 
@@ -927,8 +602,8 @@ namespace BeamMP_Tool
             this.panel7.Controls.Add(this.reloadCfgBtn);
             this.panel7.Controls.Add(this.editConf);
             this.panel7.Controls.Add(this.httpTabBtn);
-            this.panel7.Controls.Add(this.panel9);
-            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Controls.Add(this.mapsPnl);
+            this.panel7.Controls.Add(this.generalSettingsPnl);
             this.panel7.Controls.Add(this.saveBtn);
             this.panel7.Controls.Add(this.label7);
             this.panel7.Controls.Add(this.miscPnl);
@@ -939,160 +614,21 @@ namespace BeamMP_Tool
             this.panel7.Size = new System.Drawing.Size(602, 456);
             this.panel7.TabIndex = 22;
             // 
-            // customSmoothBtn2
+            // mapsPnl
             // 
-            this.customSmoothBtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.customSmoothBtn2.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.customSmoothBtn2.Can_Focus = true;
-            this.customSmoothBtn2.ClickTransitionSpeed = 60;
-            this.customSmoothBtn2.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.customSmoothBtn2.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.customSmoothBtn2.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.customSmoothBtn2.EnableSmoothTransitions = true;
-            this.customSmoothBtn2.FlatAppearance.BorderSize = 0;
-            this.customSmoothBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.customSmoothBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.customSmoothBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customSmoothBtn2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.customSmoothBtn2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.customSmoothBtn2.Image = global::BeamMP_Tool.Properties.Resources._468;
-            this.customSmoothBtn2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.customSmoothBtn2.Location = new System.Drawing.Point(428, 1);
-            this.customSmoothBtn2.Name = "customSmoothBtn2";
-            this.customSmoothBtn2.Size = new System.Drawing.Size(167, 21);
-            this.customSmoothBtn2.TabIndex = 34;
-            this.customSmoothBtn2.Text = "Open ROOT Server Folder";
-            this.customSmoothBtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customSmoothBtn2.TransitionSpeed = 130;
-            this.customSmoothBtn2.UseVisualStyleBackColor = false;
-            this.customSmoothBtn2.Click += new System.EventHandler(this.customSmoothBtn2_Click_6);
-            // 
-            // miscTabBtn
-            // 
-            this.miscTabBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.miscTabBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.miscTabBtn.Can_Focus = true;
-            this.miscTabBtn.ClickTransitionSpeed = 60;
-            this.miscTabBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.miscTabBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.miscTabBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.miscTabBtn.EnableSmoothTransitions = true;
-            this.miscTabBtn.FlatAppearance.BorderSize = 0;
-            this.miscTabBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.miscTabBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.miscTabBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.miscTabBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.miscTabBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.miscTabBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.miscTabBtn.Location = new System.Drawing.Point(4, 413);
-            this.miscTabBtn.Name = "miscTabBtn";
-            this.miscTabBtn.Size = new System.Drawing.Size(45, 24);
-            this.miscTabBtn.TabIndex = 33;
-            this.miscTabBtn.Text = "Misc";
-            this.miscTabBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.miscTabBtn.TransitionSpeed = 130;
-            this.miscTabBtn.UseVisualStyleBackColor = false;
-            this.miscTabBtn.Click += new System.EventHandler(this.customSmoothBtn3_Click);
-            // 
-            // editConf
-            // 
-            this.editConf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.editConf.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.editConf.Can_Focus = true;
-            this.editConf.ClickTransitionSpeed = 60;
-            this.editConf.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.editConf.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.editConf.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.editConf.EnableSmoothTransitions = true;
-            this.editConf.FlatAppearance.BorderSize = 0;
-            this.editConf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.editConf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.editConf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editConf.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.editConf.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.editConf.Image = ((System.Drawing.Image)(resources.GetObject("editConf.Image")));
-            this.editConf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.editConf.Location = new System.Drawing.Point(112, 1);
-            this.editConf.Name = "editConf";
-            this.editConf.Size = new System.Drawing.Size(224, 21);
-            this.editConf.TabIndex = 26;
-            this.editConf.Text = "Edit ServerConfig.toml using notepad";
-            this.editConf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.editConf.TransitionSpeed = 130;
-            this.editConf.UseVisualStyleBackColor = false;
-            this.editConf.Click += new System.EventHandler(this.editConf_Click);
-            // 
-            // httpTabBtn
-            // 
-            this.httpTabBtn.BackColor = System.Drawing.Color.Transparent;
-            this.httpTabBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.httpTabBtn.Can_Focus = true;
-            this.httpTabBtn.ClickTransitionSpeed = 60;
-            this.httpTabBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.httpTabBtn.ColorNormal = System.Drawing.Color.Empty;
-            this.httpTabBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.httpTabBtn.EnableSmoothTransitions = true;
-            this.httpTabBtn.FlatAppearance.BorderSize = 0;
-            this.httpTabBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.httpTabBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.httpTabBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.httpTabBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.httpTabBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.httpTabBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.httpTabBtn.Location = new System.Drawing.Point(4, 386);
-            this.httpTabBtn.Name = "httpTabBtn";
-            this.httpTabBtn.Size = new System.Drawing.Size(45, 24);
-            this.httpTabBtn.TabIndex = 32;
-            this.httpTabBtn.Text = "HTTP";
-            this.httpTabBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.httpTabBtn.TransitionSpeed = 130;
-            this.httpTabBtn.UseVisualStyleBackColor = false;
-            this.httpTabBtn.Click += new System.EventHandler(this.customSmoothBtn2_Click_1);
-            // 
-            // panel9
-            // 
-            this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.Controls.Add(this.checkBox1);
-            this.panel9.Controls.Add(this.currentMapZipBtn);
-            this.panel9.Controls.Add(this.label8);
-            this.panel9.Controls.Add(this.customSmoothBtn1);
-            this.panel9.Controls.Add(this.mapsListView);
-            this.panel9.Controls.Add(this.searchMapsBtn);
-            this.panel9.ForeColor = System.Drawing.SystemColors.Control;
-            this.panel9.Location = new System.Drawing.Point(6, 155);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(592, 220);
-            this.panel9.TabIndex = 19;
-            // 
-            // currentMapZipBtn
-            // 
-            this.currentMapZipBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.currentMapZipBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.currentMapZipBtn.Can_Focus = true;
-            this.currentMapZipBtn.ClickTransitionSpeed = 60;
-            this.currentMapZipBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.currentMapZipBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.currentMapZipBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.currentMapZipBtn.Enabled = false;
-            this.currentMapZipBtn.EnableSmoothTransitions = true;
-            this.currentMapZipBtn.FlatAppearance.BorderSize = 0;
-            this.currentMapZipBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.currentMapZipBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.currentMapZipBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.currentMapZipBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.currentMapZipBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.currentMapZipBtn.Image = global::BeamMP_Tool.Properties.Resources._468;
-            this.currentMapZipBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.currentMapZipBtn.Location = new System.Drawing.Point(178, 3);
-            this.currentMapZipBtn.Name = "currentMapZipBtn";
-            this.currentMapZipBtn.Size = new System.Drawing.Size(172, 21);
-            this.currentMapZipBtn.TabIndex = 26;
-            this.currentMapZipBtn.Text = "Find .zip file of loaded map";
-            this.currentMapZipBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.currentMapZipBtn.TransitionSpeed = 130;
-            this.currentMapZipBtn.UseVisualStyleBackColor = false;
-            this.currentMapZipBtn.Click += new System.EventHandler(this.customSmoothBtn2_Click_2);
+            this.mapsPnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mapsPnl.BackgroundImage")));
+            this.mapsPnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mapsPnl.Controls.Add(this.checkBox1);
+            this.mapsPnl.Controls.Add(this.currentMapZipBtn);
+            this.mapsPnl.Controls.Add(this.label8);
+            this.mapsPnl.Controls.Add(this.customSmoothBtn1);
+            this.mapsPnl.Controls.Add(this.mapsListView);
+            this.mapsPnl.Controls.Add(this.searchMapsBtn);
+            this.mapsPnl.ForeColor = System.Drawing.SystemColors.Control;
+            this.mapsPnl.Location = new System.Drawing.Point(6, 155);
+            this.mapsPnl.Name = "mapsPnl";
+            this.mapsPnl.Size = new System.Drawing.Size(592, 220);
+            this.mapsPnl.TabIndex = 19;
             // 
             // label8
             // 
@@ -1105,34 +641,6 @@ namespace BeamMP_Tool
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 25;
             this.label8.Text = "-Maps-";
-            // 
-            // customSmoothBtn1
-            // 
-            this.customSmoothBtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.customSmoothBtn1.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.customSmoothBtn1.Can_Focus = true;
-            this.customSmoothBtn1.ClickTransitionSpeed = 60;
-            this.customSmoothBtn1.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.customSmoothBtn1.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.customSmoothBtn1.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.customSmoothBtn1.EnableSmoothTransitions = true;
-            this.customSmoothBtn1.FlatAppearance.BorderSize = 0;
-            this.customSmoothBtn1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.customSmoothBtn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.customSmoothBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customSmoothBtn1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.customSmoothBtn1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.customSmoothBtn1.Image = global::BeamMP_Tool.Properties.Resources._468;
-            this.customSmoothBtn1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.customSmoothBtn1.Location = new System.Drawing.Point(50, 3);
-            this.customSmoothBtn1.Name = "customSmoothBtn1";
-            this.customSmoothBtn1.Size = new System.Drawing.Size(125, 21);
-            this.customSmoothBtn1.TabIndex = 22;
-            this.customSmoothBtn1.Text = "Open maps folder";
-            this.customSmoothBtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customSmoothBtn1.TransitionSpeed = 130;
-            this.customSmoothBtn1.UseVisualStyleBackColor = false;
-            this.customSmoothBtn1.Click += new System.EventHandler(this.button3_Click_2);
             // 
             // mapsListView
             // 
@@ -1153,37 +661,53 @@ namespace BeamMP_Tool
             this.mapsListView.UseCompatibleStateImageBehavior = false;
             this.mapsListView.View = System.Windows.Forms.View.Tile;
             // 
-            // panel8
+            // generalSettingsPnl
             // 
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Controls.Add(this.privChckBox);
-            this.panel8.Controls.Add(this.customDescBtn2);
-            this.panel8.Controls.Add(this.customNameBtn2);
-            this.panel8.Controls.Add(this.descTxtBox);
-            this.panel8.Controls.Add(this.nameTxtBox);
-            this.panel8.Controls.Add(this.logChatChckB);
-            this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.debugChckBox);
-            this.panel8.Controls.Add(this.maxCarsTxtBox);
-            this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.maxPlayersTxtBox);
-            this.panel8.Controls.Add(this.label1);
-            this.panel8.Controls.Add(this.maxCarsDropBtn);
-            this.panel8.Controls.Add(this.label3);
-            this.panel8.Controls.Add(this.maxPlayersDropBtn);
-            this.panel8.Controls.Add(this.maxPlayerCombo);
-            this.panel8.Controls.Add(this.label4);
-            this.panel8.Controls.Add(this.maxCarsCombo);
-            this.panel8.Controls.Add(this.portTxtBox);
-            this.panel8.Controls.Add(this.label5);
-            this.panel8.Controls.Add(this.authTxtBox);
-            this.panel8.Controls.Add(this.linkLabel1);
-            this.panel8.ForeColor = System.Drawing.SystemColors.Control;
-            this.panel8.Location = new System.Drawing.Point(6, 23);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(592, 130);
-            this.panel8.TabIndex = 0;
+            this.generalSettingsPnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("generalSettingsPnl.BackgroundImage")));
+            this.generalSettingsPnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.generalSettingsPnl.Controls.Add(this.tagsTxtBox);
+            this.generalSettingsPnl.Controls.Add(this.label11);
+            this.generalSettingsPnl.Controls.Add(this.privChckBox);
+            this.generalSettingsPnl.Controls.Add(this.customDescBtn2);
+            this.generalSettingsPnl.Controls.Add(this.customNameBtn2);
+            this.generalSettingsPnl.Controls.Add(this.descTxtBox);
+            this.generalSettingsPnl.Controls.Add(this.nameTxtBox);
+            this.generalSettingsPnl.Controls.Add(this.logChatChckB);
+            this.generalSettingsPnl.Controls.Add(this.label9);
+            this.generalSettingsPnl.Controls.Add(this.debugChckBox);
+            this.generalSettingsPnl.Controls.Add(this.maxCarsTxtBox);
+            this.generalSettingsPnl.Controls.Add(this.label2);
+            this.generalSettingsPnl.Controls.Add(this.maxPlayersTxtBox);
+            this.generalSettingsPnl.Controls.Add(this.label1);
+            this.generalSettingsPnl.Controls.Add(this.maxCarsDropBtn);
+            this.generalSettingsPnl.Controls.Add(this.label3);
+            this.generalSettingsPnl.Controls.Add(this.maxPlayersDropBtn);
+            this.generalSettingsPnl.Controls.Add(this.maxPlayerCombo);
+            this.generalSettingsPnl.Controls.Add(this.label4);
+            this.generalSettingsPnl.Controls.Add(this.maxCarsCombo);
+            this.generalSettingsPnl.Controls.Add(this.portTxtBox);
+            this.generalSettingsPnl.Controls.Add(this.label5);
+            this.generalSettingsPnl.Controls.Add(this.authTxtBox);
+            this.generalSettingsPnl.Controls.Add(this.linkLabel1);
+            this.generalSettingsPnl.ForeColor = System.Drawing.SystemColors.Control;
+            this.generalSettingsPnl.Location = new System.Drawing.Point(6, 23);
+            this.generalSettingsPnl.Name = "generalSettingsPnl";
+            this.generalSettingsPnl.Size = new System.Drawing.Size(592, 130);
+            this.generalSettingsPnl.TabIndex = 0;
+            // 
+            // tagsTxtBox
+            // 
+            this.tagsTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
+            this.tagsTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tagsTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tagsTxtBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.tagsTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.tagsTxtBox.Location = new System.Drawing.Point(401, 98);
+            this.tagsTxtBox.Name = "tagsTxtBox";
+            this.tagsTxtBox.Size = new System.Drawing.Size(187, 25);
+            this.tagsTxtBox.TabIndex = 40;
+            this.tagsTxtBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.descTxtBox_MouseClick);
+            this.tagsTxtBox.Leave += new System.EventHandler(this.descTxtBox_Leave);
             // 
             // descTxtBox
             // 
@@ -1239,7 +763,7 @@ namespace BeamMP_Tool
             this.maxCarsTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.maxCarsTxtBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.maxCarsTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.maxCarsTxtBox.Location = new System.Drawing.Point(394, 80);
+            this.maxCarsTxtBox.Location = new System.Drawing.Point(394, 69);
             this.maxCarsTxtBox.Name = "maxCarsTxtBox";
             this.maxCarsTxtBox.Size = new System.Drawing.Size(57, 25);
             this.maxCarsTxtBox.TabIndex = 31;
@@ -1253,64 +777,12 @@ namespace BeamMP_Tool
             this.maxPlayersTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.maxPlayersTxtBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.maxPlayersTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.maxPlayersTxtBox.Location = new System.Drawing.Point(394, 31);
+            this.maxPlayersTxtBox.Location = new System.Drawing.Point(394, 20);
             this.maxPlayersTxtBox.Name = "maxPlayersTxtBox";
             this.maxPlayersTxtBox.Size = new System.Drawing.Size(57, 25);
             this.maxPlayersTxtBox.TabIndex = 30;
             this.maxPlayersTxtBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.descTxtBox_MouseClick);
             this.maxPlayersTxtBox.Leave += new System.EventHandler(this.descTxtBox_Leave);
-            // 
-            // maxCarsDropBtn
-            // 
-            this.maxCarsDropBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.maxCarsDropBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.maxCarsDropBtn.Can_Focus = true;
-            this.maxCarsDropBtn.ClickTransitionSpeed = 60;
-            this.maxCarsDropBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.maxCarsDropBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.maxCarsDropBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.maxCarsDropBtn.EnableSmoothTransitions = true;
-            this.maxCarsDropBtn.FlatAppearance.BorderSize = 0;
-            this.maxCarsDropBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.maxCarsDropBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.maxCarsDropBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.maxCarsDropBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.maxCarsDropBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.maxCarsDropBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.maxCarsDropBtn.Location = new System.Drawing.Point(451, 80);
-            this.maxCarsDropBtn.Name = "maxCarsDropBtn";
-            this.maxCarsDropBtn.Size = new System.Drawing.Size(22, 25);
-            this.maxCarsDropBtn.TabIndex = 29;
-            this.maxCarsDropBtn.Text = "▼";
-            this.maxCarsDropBtn.TransitionSpeed = 130;
-            this.maxCarsDropBtn.UseVisualStyleBackColor = false;
-            this.maxCarsDropBtn.Click += new System.EventHandler(this.customSmoothBtn2_Click);
-            // 
-            // maxPlayersDropBtn
-            // 
-            this.maxPlayersDropBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.maxPlayersDropBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.maxPlayersDropBtn.Can_Focus = true;
-            this.maxPlayersDropBtn.ClickTransitionSpeed = 60;
-            this.maxPlayersDropBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.maxPlayersDropBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.maxPlayersDropBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.maxPlayersDropBtn.EnableSmoothTransitions = true;
-            this.maxPlayersDropBtn.FlatAppearance.BorderSize = 0;
-            this.maxPlayersDropBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.maxPlayersDropBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.maxPlayersDropBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.maxPlayersDropBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.maxPlayersDropBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.maxPlayersDropBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.maxPlayersDropBtn.Location = new System.Drawing.Point(451, 31);
-            this.maxPlayersDropBtn.Name = "maxPlayersDropBtn";
-            this.maxPlayersDropBtn.Size = new System.Drawing.Size(22, 25);
-            this.maxPlayersDropBtn.TabIndex = 28;
-            this.maxPlayersDropBtn.Text = "▼";
-            this.maxPlayersDropBtn.TransitionSpeed = 130;
-            this.maxPlayersDropBtn.UseVisualStyleBackColor = false;
-            this.maxPlayersDropBtn.Click += new System.EventHandler(this.customSmoothBtn1_Click_1);
             // 
             // portTxtBox
             // 
@@ -1319,7 +791,7 @@ namespace BeamMP_Tool
             this.portTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.portTxtBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.portTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.portTxtBox.Location = new System.Drawing.Point(32, 97);
+            this.portTxtBox.Location = new System.Drawing.Point(32, 98);
             this.portTxtBox.Name = "portTxtBox";
             this.portTxtBox.Size = new System.Drawing.Size(99, 25);
             this.portTxtBox.TabIndex = 24;
@@ -1334,40 +806,12 @@ namespace BeamMP_Tool
             this.authTxtBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.authTxtBox.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.authTxtBox.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.authTxtBox.Location = new System.Drawing.Point(191, 97);
+            this.authTxtBox.Location = new System.Drawing.Point(191, 98);
             this.authTxtBox.Name = "authTxtBox";
             this.authTxtBox.Size = new System.Drawing.Size(172, 25);
             this.authTxtBox.TabIndex = 23;
             this.authTxtBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.descTxtBox_MouseClick);
             this.authTxtBox.Leave += new System.EventHandler(this.descTxtBox_Leave);
-            // 
-            // saveBtn
-            // 
-            this.saveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.saveBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.saveBtn.Can_Focus = true;
-            this.saveBtn.ClickTransitionSpeed = 60;
-            this.saveBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.saveBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.saveBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.saveBtn.EnableSmoothTransitions = true;
-            this.saveBtn.FlatAppearance.BorderSize = 0;
-            this.saveBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.saveBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.saveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.saveBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.saveBtn.Image = ((System.Drawing.Image)(resources.GetObject("saveBtn.Image")));
-            this.saveBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.saveBtn.Location = new System.Drawing.Point(517, 392);
-            this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(82, 39);
-            this.saveBtn.TabIndex = 22;
-            this.saveBtn.Text = "Save";
-            this.saveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saveBtn.TransitionSpeed = 130;
-            this.saveBtn.UseVisualStyleBackColor = false;
-            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // label7
             // 
@@ -1415,62 +859,6 @@ namespace BeamMP_Tool
             this.httpPnl.Name = "httpPnl";
             this.httpPnl.Size = new System.Drawing.Size(465, 76);
             this.httpPnl.TabIndex = 1;
-            // 
-            // selectSSLKeyBtn
-            // 
-            this.selectSSLKeyBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.selectSSLKeyBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.selectSSLKeyBtn.Can_Focus = true;
-            this.selectSSLKeyBtn.ClickTransitionSpeed = 60;
-            this.selectSSLKeyBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.selectSSLKeyBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.selectSSLKeyBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.selectSSLKeyBtn.Enabled = false;
-            this.selectSSLKeyBtn.EnableSmoothTransitions = true;
-            this.selectSSLKeyBtn.FlatAppearance.BorderSize = 0;
-            this.selectSSLKeyBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.selectSSLKeyBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.selectSSLKeyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.selectSSLKeyBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.selectSSLKeyBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.selectSSLKeyBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.selectSSLKeyBtn.Location = new System.Drawing.Point(296, 48);
-            this.selectSSLKeyBtn.Name = "selectSSLKeyBtn";
-            this.selectSSLKeyBtn.Size = new System.Drawing.Size(107, 25);
-            this.selectSSLKeyBtn.TabIndex = 44;
-            this.selectSSLKeyBtn.Text = "Select file path...";
-            this.selectSSLKeyBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.selectSSLKeyBtn.TransitionSpeed = 130;
-            this.selectSSLKeyBtn.UseVisualStyleBackColor = false;
-            this.selectSSLKeyBtn.Click += new System.EventHandler(this.selectSSLKeyBtn_Click);
-            // 
-            // selectSSLCertBtn
-            // 
-            this.selectSSLCertBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.selectSSLCertBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.selectSSLCertBtn.Can_Focus = true;
-            this.selectSSLCertBtn.ClickTransitionSpeed = 60;
-            this.selectSSLCertBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
-            this.selectSSLCertBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
-            this.selectSSLCertBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
-            this.selectSSLCertBtn.Enabled = false;
-            this.selectSSLCertBtn.EnableSmoothTransitions = true;
-            this.selectSSLCertBtn.FlatAppearance.BorderSize = 0;
-            this.selectSSLCertBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.selectSSLCertBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.selectSSLCertBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.selectSSLCertBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.selectSSLCertBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.selectSSLCertBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.selectSSLCertBtn.Location = new System.Drawing.Point(296, 19);
-            this.selectSSLCertBtn.Name = "selectSSLCertBtn";
-            this.selectSSLCertBtn.Size = new System.Drawing.Size(107, 25);
-            this.selectSSLCertBtn.TabIndex = 32;
-            this.selectSSLCertBtn.Text = "Select file path...";
-            this.selectSSLCertBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.selectSSLCertBtn.TransitionSpeed = 130;
-            this.selectSSLCertBtn.UseVisualStyleBackColor = false;
-            this.selectSSLCertBtn.Click += new System.EventHandler(this.selectSSLCertBtn_Click);
             // 
             // httpSrvPortTxtB
             // 
@@ -1632,6 +1020,649 @@ namespace BeamMP_Tool
             this.showHideSrvPnlBtn.UseVisualStyleBackColor = false;
             this.showHideSrvPnlBtn.Click += new System.EventHandler(this.customSmoothBtn3_Click_1);
             // 
+            // otherBtn
+            // 
+            this.otherBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.otherBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.otherBtn.Can_Focus = true;
+            this.otherBtn.ClickTransitionSpeed = 60;
+            this.otherBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.otherBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.otherBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.otherBtn.EnableSmoothTransitions = true;
+            this.otherBtn.FlatAppearance.BorderSize = 0;
+            this.otherBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.otherBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.otherBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.otherBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.otherBtn.ForeColor = System.Drawing.Color.LawnGreen;
+            this.otherBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.otherBtn.Location = new System.Drawing.Point(508, 33);
+            this.otherBtn.Name = "otherBtn";
+            this.otherBtn.Size = new System.Drawing.Size(71, 24);
+            this.otherBtn.TabIndex = 34;
+            this.otherBtn.Text = "Tools   ▼";
+            this.otherBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.otherBtn, "Reloading will clear any unsaved changes!");
+            this.otherBtn.TransitionSpeed = 130;
+            this.otherBtn.UseVisualStyleBackColor = false;
+            this.otherBtn.Click += new System.EventHandler(this.customSmoothBtn2_Click_4);
+            // 
+            // infohelpBtn
+            // 
+            this.infohelpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(54)))), ((int)(((byte)(84)))));
+            this.infohelpBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.infohelpBtn.BackgroundImage = global::BeamMP_Tool.Properties.Resources._7cs9Ed_gradient1RESIZED1_TOP_PANEL2;
+            this.infohelpBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.infohelpBtn.Can_Focus = true;
+            this.infohelpBtn.ClickTransitionSpeed = 60;
+            this.infohelpBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.infohelpBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.infohelpBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.infohelpBtn.EnableSmoothTransitions = true;
+            this.infohelpBtn.FlatAppearance.BorderSize = 0;
+            this.infohelpBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.infohelpBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.infohelpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.infohelpBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.infohelpBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.infohelpBtn.Image = global::BeamMP_Tool.Properties.Resources.icons8_info_24;
+            this.infohelpBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.infohelpBtn.Location = new System.Drawing.Point(641, 0);
+            this.infohelpBtn.Name = "infohelpBtn";
+            this.infohelpBtn.Size = new System.Drawing.Size(56, 25);
+            this.infohelpBtn.TabIndex = 27;
+            this.infohelpBtn.Text = "Info";
+            this.infohelpBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.infohelpBtn, "Info-Help");
+            this.infohelpBtn.TransitionSpeed = 130;
+            this.infohelpBtn.UseVisualStyleBackColor = false;
+            this.infohelpBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // customSmoothBtn2
+            // 
+            this.customSmoothBtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.customSmoothBtn2.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.customSmoothBtn2.Can_Focus = true;
+            this.customSmoothBtn2.ClickTransitionSpeed = 60;
+            this.customSmoothBtn2.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.customSmoothBtn2.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.customSmoothBtn2.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.customSmoothBtn2.EnableSmoothTransitions = true;
+            this.customSmoothBtn2.FlatAppearance.BorderSize = 0;
+            this.customSmoothBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.customSmoothBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.customSmoothBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customSmoothBtn2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.customSmoothBtn2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.customSmoothBtn2.Image = global::BeamMP_Tool.Properties.Resources._468;
+            this.customSmoothBtn2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.customSmoothBtn2.Location = new System.Drawing.Point(428, 1);
+            this.customSmoothBtn2.Name = "customSmoothBtn2";
+            this.customSmoothBtn2.Size = new System.Drawing.Size(167, 21);
+            this.customSmoothBtn2.TabIndex = 34;
+            this.customSmoothBtn2.Text = "Open ROOT Server Folder";
+            this.customSmoothBtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customSmoothBtn2.TransitionSpeed = 130;
+            this.customSmoothBtn2.UseVisualStyleBackColor = false;
+            this.customSmoothBtn2.Click += new System.EventHandler(this.customSmoothBtn2_Click_6);
+            // 
+            // miscTabBtn
+            // 
+            this.miscTabBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.miscTabBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.miscTabBtn.Can_Focus = true;
+            this.miscTabBtn.ClickTransitionSpeed = 60;
+            this.miscTabBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.miscTabBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.miscTabBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.miscTabBtn.EnableSmoothTransitions = true;
+            this.miscTabBtn.FlatAppearance.BorderSize = 0;
+            this.miscTabBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.miscTabBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.miscTabBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.miscTabBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.miscTabBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.miscTabBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.miscTabBtn.Location = new System.Drawing.Point(4, 413);
+            this.miscTabBtn.Name = "miscTabBtn";
+            this.miscTabBtn.Size = new System.Drawing.Size(45, 24);
+            this.miscTabBtn.TabIndex = 33;
+            this.miscTabBtn.Text = "Misc";
+            this.miscTabBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.miscTabBtn.TransitionSpeed = 130;
+            this.miscTabBtn.UseVisualStyleBackColor = false;
+            this.miscTabBtn.Click += new System.EventHandler(this.customSmoothBtn3_Click);
+            // 
+            // reloadCfgBtn
+            // 
+            this.reloadCfgBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.reloadCfgBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.reloadCfgBtn.Can_Focus = true;
+            this.reloadCfgBtn.ClickTransitionSpeed = 60;
+            this.reloadCfgBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.reloadCfgBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.reloadCfgBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.reloadCfgBtn.EnableSmoothTransitions = true;
+            this.reloadCfgBtn.FlatAppearance.BorderSize = 0;
+            this.reloadCfgBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.reloadCfgBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.reloadCfgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reloadCfgBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.reloadCfgBtn.ForeColor = System.Drawing.Color.LawnGreen;
+            this.reloadCfgBtn.Image = global::BeamMP_Tool.Properties.Resources.captcha16;
+            this.reloadCfgBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.reloadCfgBtn.Location = new System.Drawing.Point(338, -2);
+            this.reloadCfgBtn.Name = "reloadCfgBtn";
+            this.reloadCfgBtn.Size = new System.Drawing.Size(72, 25);
+            this.reloadCfgBtn.TabIndex = 27;
+            this.reloadCfgBtn.Text = "Reload";
+            this.reloadCfgBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.reloadCfgBtn, "Reloading will clear any current unsaved changes and reload the ServerConfig.toml" +
+        " file.");
+            this.reloadCfgBtn.TransitionSpeed = 130;
+            this.reloadCfgBtn.UseVisualStyleBackColor = false;
+            this.reloadCfgBtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // editConf
+            // 
+            this.editConf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.editConf.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.editConf.Can_Focus = true;
+            this.editConf.ClickTransitionSpeed = 60;
+            this.editConf.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.editConf.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.editConf.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.editConf.EnableSmoothTransitions = true;
+            this.editConf.FlatAppearance.BorderSize = 0;
+            this.editConf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.editConf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.editConf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editConf.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.editConf.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.editConf.Image = ((System.Drawing.Image)(resources.GetObject("editConf.Image")));
+            this.editConf.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.editConf.Location = new System.Drawing.Point(112, 1);
+            this.editConf.Name = "editConf";
+            this.editConf.Size = new System.Drawing.Size(224, 21);
+            this.editConf.TabIndex = 26;
+            this.editConf.Text = "Edit ServerConfig.toml using notepad";
+            this.editConf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.editConf.TransitionSpeed = 130;
+            this.editConf.UseVisualStyleBackColor = false;
+            this.editConf.Click += new System.EventHandler(this.editConf_Click);
+            // 
+            // httpTabBtn
+            // 
+            this.httpTabBtn.BackColor = System.Drawing.Color.Transparent;
+            this.httpTabBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.httpTabBtn.Can_Focus = true;
+            this.httpTabBtn.ClickTransitionSpeed = 60;
+            this.httpTabBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.httpTabBtn.ColorNormal = System.Drawing.Color.Empty;
+            this.httpTabBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.httpTabBtn.EnableSmoothTransitions = true;
+            this.httpTabBtn.FlatAppearance.BorderSize = 0;
+            this.httpTabBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.httpTabBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.httpTabBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.httpTabBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.httpTabBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.httpTabBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.httpTabBtn.Location = new System.Drawing.Point(4, 386);
+            this.httpTabBtn.Name = "httpTabBtn";
+            this.httpTabBtn.Size = new System.Drawing.Size(45, 24);
+            this.httpTabBtn.TabIndex = 32;
+            this.httpTabBtn.Text = "HTTP";
+            this.httpTabBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.httpTabBtn.TransitionSpeed = 130;
+            this.httpTabBtn.UseVisualStyleBackColor = false;
+            this.httpTabBtn.Visible = false;
+            this.httpTabBtn.Click += new System.EventHandler(this.customSmoothBtn2_Click_1);
+            // 
+            // currentMapZipBtn
+            // 
+            this.currentMapZipBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.currentMapZipBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.currentMapZipBtn.Can_Focus = true;
+            this.currentMapZipBtn.ClickTransitionSpeed = 60;
+            this.currentMapZipBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.currentMapZipBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.currentMapZipBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.currentMapZipBtn.Enabled = false;
+            this.currentMapZipBtn.EnableSmoothTransitions = true;
+            this.currentMapZipBtn.FlatAppearance.BorderSize = 0;
+            this.currentMapZipBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.currentMapZipBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.currentMapZipBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.currentMapZipBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.currentMapZipBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.currentMapZipBtn.Image = global::BeamMP_Tool.Properties.Resources._468;
+            this.currentMapZipBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.currentMapZipBtn.Location = new System.Drawing.Point(178, 3);
+            this.currentMapZipBtn.Name = "currentMapZipBtn";
+            this.currentMapZipBtn.Size = new System.Drawing.Size(172, 21);
+            this.currentMapZipBtn.TabIndex = 26;
+            this.currentMapZipBtn.Text = "Find .zip file of loaded map";
+            this.currentMapZipBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.currentMapZipBtn.TransitionSpeed = 130;
+            this.currentMapZipBtn.UseVisualStyleBackColor = false;
+            this.currentMapZipBtn.Click += new System.EventHandler(this.customSmoothBtn2_Click_2);
+            // 
+            // customSmoothBtn1
+            // 
+            this.customSmoothBtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.customSmoothBtn1.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.customSmoothBtn1.Can_Focus = true;
+            this.customSmoothBtn1.ClickTransitionSpeed = 60;
+            this.customSmoothBtn1.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.customSmoothBtn1.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.customSmoothBtn1.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.customSmoothBtn1.EnableSmoothTransitions = true;
+            this.customSmoothBtn1.FlatAppearance.BorderSize = 0;
+            this.customSmoothBtn1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.customSmoothBtn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.customSmoothBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customSmoothBtn1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.customSmoothBtn1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.customSmoothBtn1.Image = global::BeamMP_Tool.Properties.Resources._468;
+            this.customSmoothBtn1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.customSmoothBtn1.Location = new System.Drawing.Point(50, 3);
+            this.customSmoothBtn1.Name = "customSmoothBtn1";
+            this.customSmoothBtn1.Size = new System.Drawing.Size(125, 21);
+            this.customSmoothBtn1.TabIndex = 22;
+            this.customSmoothBtn1.Text = "Open maps folder";
+            this.customSmoothBtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customSmoothBtn1.TransitionSpeed = 130;
+            this.customSmoothBtn1.UseVisualStyleBackColor = false;
+            this.customSmoothBtn1.Click += new System.EventHandler(this.button3_Click_2);
+            // 
+            // searchMapsBtn
+            // 
+            this.searchMapsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.searchMapsBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.searchMapsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.searchMapsBtn.Can_Focus = true;
+            this.searchMapsBtn.ClickTransitionSpeed = 60;
+            this.searchMapsBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.searchMapsBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.searchMapsBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.searchMapsBtn.EnableSmoothTransitions = true;
+            this.searchMapsBtn.FlatAppearance.BorderSize = 0;
+            this.searchMapsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.searchMapsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.searchMapsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchMapsBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.searchMapsBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.searchMapsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
+            this.searchMapsBtn.Location = new System.Drawing.Point(508, 3);
+            this.searchMapsBtn.Name = "searchMapsBtn";
+            this.searchMapsBtn.Size = new System.Drawing.Size(24, 21);
+            this.searchMapsBtn.TabIndex = 22;
+            this.toolTip1.SetToolTip(this.searchMapsBtn, "Search Mods");
+            this.searchMapsBtn.TransitionSpeed = 130;
+            this.searchMapsBtn.UseVisualStyleBackColor = false;
+            this.searchMapsBtn.Click += new System.EventHandler(this.searchMapsBtn_Click);
+            // 
+            // customDescBtn2
+            // 
+            this.customDescBtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
+            this.customDescBtn2.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.customDescBtn2.Can_Focus = true;
+            this.customDescBtn2.ClickTransitionSpeed = 60;
+            this.customDescBtn2.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.customDescBtn2.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
+            this.customDescBtn2.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.customDescBtn2.EnableSmoothTransitions = true;
+            this.customDescBtn2.FlatAppearance.BorderSize = 0;
+            this.customDescBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.customDescBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.customDescBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customDescBtn2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.customDescBtn2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.customDescBtn2.Image = ((System.Drawing.Image)(resources.GetObject("customDescBtn2.Image")));
+            this.customDescBtn2.Location = new System.Drawing.Point(339, 65);
+            this.customDescBtn2.Name = "customDescBtn2";
+            this.customDescBtn2.Size = new System.Drawing.Size(23, 21);
+            this.customDescBtn2.TabIndex = 38;
+            this.customDescBtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.customDescBtn2, "Customize the your server\'s description by changing the text color, making it bol" +
+        "d etc.");
+            this.customDescBtn2.TransitionSpeed = 130;
+            this.customDescBtn2.UseVisualStyleBackColor = false;
+            this.customDescBtn2.Visible = false;
+            this.customDescBtn2.Click += new System.EventHandler(this.customDescBtn2_Click);
+            this.customDescBtn2.MouseLeave += new System.EventHandler(this.descTxtBox_MouseLeave);
+            // 
+            // customNameBtn2
+            // 
+            this.customNameBtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
+            this.customNameBtn2.BackgroundBackColor = System.Drawing.Color.Transparent;
+            this.customNameBtn2.Can_Focus = true;
+            this.customNameBtn2.ClickTransitionSpeed = 60;
+            this.customNameBtn2.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.customNameBtn2.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
+            this.customNameBtn2.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.customNameBtn2.EnableSmoothTransitions = true;
+            this.customNameBtn2.FlatAppearance.BorderSize = 0;
+            this.customNameBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.customNameBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.customNameBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customNameBtn2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.customNameBtn2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.customNameBtn2.Image = ((System.Drawing.Image)(resources.GetObject("customNameBtn2.Image")));
+            this.customNameBtn2.Location = new System.Drawing.Point(339, 23);
+            this.customNameBtn2.Name = "customNameBtn2";
+            this.customNameBtn2.Size = new System.Drawing.Size(23, 21);
+            this.customNameBtn2.TabIndex = 37;
+            this.customNameBtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.customNameBtn2, "Customize the your server\'s name by changing the text color, making it bold etc.");
+            this.customNameBtn2.TransitionSpeed = 130;
+            this.customNameBtn2.UseVisualStyleBackColor = false;
+            this.customNameBtn2.Visible = false;
+            this.customNameBtn2.Click += new System.EventHandler(this.customNameBtn2_Click);
+            this.customNameBtn2.MouseLeave += new System.EventHandler(this.nameTxtBox_MouseLeave);
+            // 
+            // maxCarsDropBtn
+            // 
+            this.maxCarsDropBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.maxCarsDropBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.maxCarsDropBtn.Can_Focus = true;
+            this.maxCarsDropBtn.ClickTransitionSpeed = 60;
+            this.maxCarsDropBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.maxCarsDropBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.maxCarsDropBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.maxCarsDropBtn.EnableSmoothTransitions = true;
+            this.maxCarsDropBtn.FlatAppearance.BorderSize = 0;
+            this.maxCarsDropBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.maxCarsDropBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.maxCarsDropBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maxCarsDropBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.maxCarsDropBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.maxCarsDropBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.maxCarsDropBtn.Location = new System.Drawing.Point(451, 69);
+            this.maxCarsDropBtn.Name = "maxCarsDropBtn";
+            this.maxCarsDropBtn.Size = new System.Drawing.Size(22, 25);
+            this.maxCarsDropBtn.TabIndex = 29;
+            this.maxCarsDropBtn.Text = "▼";
+            this.maxCarsDropBtn.TransitionSpeed = 130;
+            this.maxCarsDropBtn.UseVisualStyleBackColor = false;
+            this.maxCarsDropBtn.Click += new System.EventHandler(this.customSmoothBtn2_Click);
+            // 
+            // maxPlayersDropBtn
+            // 
+            this.maxPlayersDropBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.maxPlayersDropBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.maxPlayersDropBtn.Can_Focus = true;
+            this.maxPlayersDropBtn.ClickTransitionSpeed = 60;
+            this.maxPlayersDropBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.maxPlayersDropBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.maxPlayersDropBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.maxPlayersDropBtn.EnableSmoothTransitions = true;
+            this.maxPlayersDropBtn.FlatAppearance.BorderSize = 0;
+            this.maxPlayersDropBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.maxPlayersDropBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.maxPlayersDropBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maxPlayersDropBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.maxPlayersDropBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.maxPlayersDropBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.maxPlayersDropBtn.Location = new System.Drawing.Point(451, 20);
+            this.maxPlayersDropBtn.Name = "maxPlayersDropBtn";
+            this.maxPlayersDropBtn.Size = new System.Drawing.Size(22, 25);
+            this.maxPlayersDropBtn.TabIndex = 28;
+            this.maxPlayersDropBtn.Text = "▼";
+            this.maxPlayersDropBtn.TransitionSpeed = 130;
+            this.maxPlayersDropBtn.UseVisualStyleBackColor = false;
+            this.maxPlayersDropBtn.Click += new System.EventHandler(this.customSmoothBtn1_Click_1);
+            // 
+            // saveBtn
+            // 
+            this.saveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.saveBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.saveBtn.Can_Focus = true;
+            this.saveBtn.ClickTransitionSpeed = 60;
+            this.saveBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.saveBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.saveBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.saveBtn.EnableSmoothTransitions = true;
+            this.saveBtn.FlatAppearance.BorderSize = 0;
+            this.saveBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.saveBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.saveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.saveBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.saveBtn.Image = ((System.Drawing.Image)(resources.GetObject("saveBtn.Image")));
+            this.saveBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.saveBtn.Location = new System.Drawing.Point(517, 392);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(82, 39);
+            this.saveBtn.TabIndex = 22;
+            this.saveBtn.Text = "Save";
+            this.saveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.saveBtn.TransitionSpeed = 130;
+            this.saveBtn.UseVisualStyleBackColor = false;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
+            // 
+            // selectSSLKeyBtn
+            // 
+            this.selectSSLKeyBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.selectSSLKeyBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.selectSSLKeyBtn.Can_Focus = true;
+            this.selectSSLKeyBtn.ClickTransitionSpeed = 60;
+            this.selectSSLKeyBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.selectSSLKeyBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.selectSSLKeyBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.selectSSLKeyBtn.Enabled = false;
+            this.selectSSLKeyBtn.EnableSmoothTransitions = true;
+            this.selectSSLKeyBtn.FlatAppearance.BorderSize = 0;
+            this.selectSSLKeyBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.selectSSLKeyBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.selectSSLKeyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.selectSSLKeyBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.selectSSLKeyBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.selectSSLKeyBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.selectSSLKeyBtn.Location = new System.Drawing.Point(296, 48);
+            this.selectSSLKeyBtn.Name = "selectSSLKeyBtn";
+            this.selectSSLKeyBtn.Size = new System.Drawing.Size(107, 25);
+            this.selectSSLKeyBtn.TabIndex = 44;
+            this.selectSSLKeyBtn.Text = "Select file path...";
+            this.selectSSLKeyBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.selectSSLKeyBtn.TransitionSpeed = 130;
+            this.selectSSLKeyBtn.UseVisualStyleBackColor = false;
+            this.selectSSLKeyBtn.Click += new System.EventHandler(this.selectSSLKeyBtn_Click);
+            // 
+            // selectSSLCertBtn
+            // 
+            this.selectSSLCertBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.selectSSLCertBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.selectSSLCertBtn.Can_Focus = true;
+            this.selectSSLCertBtn.ClickTransitionSpeed = 60;
+            this.selectSSLCertBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.selectSSLCertBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.selectSSLCertBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.selectSSLCertBtn.Enabled = false;
+            this.selectSSLCertBtn.EnableSmoothTransitions = true;
+            this.selectSSLCertBtn.FlatAppearance.BorderSize = 0;
+            this.selectSSLCertBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.selectSSLCertBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.selectSSLCertBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.selectSSLCertBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.selectSSLCertBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.selectSSLCertBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.selectSSLCertBtn.Location = new System.Drawing.Point(296, 19);
+            this.selectSSLCertBtn.Name = "selectSSLCertBtn";
+            this.selectSSLCertBtn.Size = new System.Drawing.Size(107, 25);
+            this.selectSSLCertBtn.TabIndex = 32;
+            this.selectSSLCertBtn.Text = "Select file path...";
+            this.selectSSLCertBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.selectSSLCertBtn.TransitionSpeed = 130;
+            this.selectSSLCertBtn.UseVisualStyleBackColor = false;
+            this.selectSSLCertBtn.Click += new System.EventHandler(this.selectSSLCertBtn_Click);
+            // 
+            // searchPluginsBtn
+            // 
+            this.searchPluginsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.searchPluginsBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.searchPluginsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.searchPluginsBtn.Can_Focus = true;
+            this.searchPluginsBtn.ClickTransitionSpeed = 60;
+            this.searchPluginsBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.searchPluginsBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.searchPluginsBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.searchPluginsBtn.EnableSmoothTransitions = true;
+            this.searchPluginsBtn.FlatAppearance.BorderSize = 0;
+            this.searchPluginsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.searchPluginsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.searchPluginsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchPluginsBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.searchPluginsBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.searchPluginsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
+            this.searchPluginsBtn.Location = new System.Drawing.Point(141, 192);
+            this.searchPluginsBtn.Name = "searchPluginsBtn";
+            this.searchPluginsBtn.Size = new System.Drawing.Size(27, 24);
+            this.searchPluginsBtn.TabIndex = 24;
+            this.toolTip1.SetToolTip(this.searchPluginsBtn, "Search Plugins");
+            this.searchPluginsBtn.TransitionSpeed = 130;
+            this.searchPluginsBtn.UseVisualStyleBackColor = false;
+            this.searchPluginsBtn.Click += new System.EventHandler(this.searchPluginsBtn_Click);
+            // 
+            // activatePluginsBtn
+            // 
+            this.activatePluginsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.activatePluginsBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.activatePluginsBtn.Can_Focus = true;
+            this.activatePluginsBtn.ClickTransitionSpeed = 60;
+            this.activatePluginsBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.activatePluginsBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.activatePluginsBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.activatePluginsBtn.Enabled = false;
+            this.activatePluginsBtn.EnableSmoothTransitions = true;
+            this.activatePluginsBtn.FlatAppearance.BorderSize = 0;
+            this.activatePluginsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.activatePluginsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.activatePluginsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.activatePluginsBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.activatePluginsBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.activatePluginsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.activatePluginsBtn.Location = new System.Drawing.Point(55, 192);
+            this.activatePluginsBtn.Name = "activatePluginsBtn";
+            this.activatePluginsBtn.Size = new System.Drawing.Size(77, 24);
+            this.activatePluginsBtn.TabIndex = 23;
+            this.activatePluginsBtn.Text = "Activate";
+            this.activatePluginsBtn.TransitionSpeed = 130;
+            this.activatePluginsBtn.UseVisualStyleBackColor = false;
+            this.activatePluginsBtn.Click += new System.EventHandler(this.activatePluginsBtn_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.button4.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.button4.Can_Focus = true;
+            this.button4.ClickTransitionSpeed = 60;
+            this.button4.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.button4.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.button4.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.button4.EnableSmoothTransitions = true;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button4.Image = global::BeamMP_Tool.Properties.Resources._468;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(177, 192);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(135, 24);
+            this.button4.TabIndex = 22;
+            this.button4.Text = "     Open Plugins folder";
+            this.toolTip1.SetToolTip(this.button4, "Put plugins in this folder");
+            this.button4.TransitionSpeed = 130;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // searchModsBtn
+            // 
+            this.searchModsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.searchModsBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.searchModsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.searchModsBtn.Can_Focus = true;
+            this.searchModsBtn.ClickTransitionSpeed = 60;
+            this.searchModsBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.searchModsBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.searchModsBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.searchModsBtn.EnableSmoothTransitions = true;
+            this.searchModsBtn.FlatAppearance.BorderSize = 0;
+            this.searchModsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.searchModsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.searchModsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchModsBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.searchModsBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.searchModsBtn.Image = global::BeamMP_Tool.Properties.Resources.search;
+            this.searchModsBtn.Location = new System.Drawing.Point(145, 228);
+            this.searchModsBtn.Name = "searchModsBtn";
+            this.searchModsBtn.Size = new System.Drawing.Size(27, 24);
+            this.searchModsBtn.TabIndex = 21;
+            this.toolTip1.SetToolTip(this.searchModsBtn, "Search Mods");
+            this.searchModsBtn.TransitionSpeed = 130;
+            this.searchModsBtn.UseVisualStyleBackColor = false;
+            this.searchModsBtn.Click += new System.EventHandler(this.searchMods_Click);
+            // 
+            // activateModBtn
+            // 
+            this.activateModBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.activateModBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.activateModBtn.Can_Focus = true;
+            this.activateModBtn.ClickTransitionSpeed = 60;
+            this.activateModBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.activateModBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.activateModBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.activateModBtn.Enabled = false;
+            this.activateModBtn.EnableSmoothTransitions = true;
+            this.activateModBtn.FlatAppearance.BorderSize = 0;
+            this.activateModBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.activateModBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.activateModBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.activateModBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.activateModBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.activateModBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.activateModBtn.Location = new System.Drawing.Point(56, 228);
+            this.activateModBtn.Name = "activateModBtn";
+            this.activateModBtn.Size = new System.Drawing.Size(77, 24);
+            this.activateModBtn.TabIndex = 19;
+            this.activateModBtn.Text = "Activate";
+            this.activateModBtn.TransitionSpeed = 130;
+            this.activateModBtn.UseVisualStyleBackColor = false;
+            this.activateModBtn.Click += new System.EventHandler(this.activateModBtn_Click);
+            // 
+            // openModsBtn
+            // 
+            this.openModsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.openModsBtn.BackgroundBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.openModsBtn.Can_Focus = true;
+            this.openModsBtn.ClickTransitionSpeed = 60;
+            this.openModsBtn.ColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(119)))));
+            this.openModsBtn.ColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(71)))), ((int)(((byte)(104)))));
+            this.openModsBtn.ColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(109)))), ((int)(((byte)(155)))));
+            this.openModsBtn.EnableSmoothTransitions = true;
+            this.openModsBtn.FlatAppearance.BorderSize = 0;
+            this.openModsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.openModsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.openModsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openModsBtn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.openModsBtn.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.openModsBtn.Image = global::BeamMP_Tool.Properties.Resources._468;
+            this.openModsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.openModsBtn.Location = new System.Drawing.Point(184, 228);
+            this.openModsBtn.Name = "openModsBtn";
+            this.openModsBtn.Size = new System.Drawing.Size(125, 24);
+            this.openModsBtn.TabIndex = 17;
+            this.openModsBtn.Text = "     Open mods folder ";
+            this.toolTip1.SetToolTip(this.openModsBtn, "Put any kind of mods in this folder (preferably don\'t put maps here)");
+            this.openModsBtn.TransitionSpeed = 130;
+            this.openModsBtn.UseVisualStyleBackColor = false;
+            this.openModsBtn.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // baseFormUsrCtrl1
             // 
             this.baseFormUsrCtrl1.BackColor = System.Drawing.Color.Transparent;
@@ -1645,7 +1676,7 @@ namespace BeamMP_Tool
             this.baseFormUsrCtrl1.parentForm = this;
             this.baseFormUsrCtrl1.Size = new System.Drawing.Size(995, 534);
             this.baseFormUsrCtrl1.TabIndex = 0;
-            this.baseFormUsrCtrl1.Title = "BeamMP Server Management Tool v3.0";
+            this.baseFormUsrCtrl1.Title = "BeamMP Server Management Tool v3.1";
             // 
             // Form1
             // 
@@ -1666,7 +1697,7 @@ namespace BeamMP_Tool
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "BeamMP Server Management Tool v2.2";
+            this.Text = "BeamMP Server Management Tool v3.1";
             this.Activated += new System.EventHandler(this.Form1_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1680,10 +1711,10 @@ namespace BeamMP_Tool
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
+            this.mapsPnl.ResumeLayout(false);
+            this.mapsPnl.PerformLayout();
+            this.generalSettingsPnl.ResumeLayout(false);
+            this.generalSettingsPnl.PerformLayout();
             this.miscPnl.ResumeLayout(false);
             this.miscPnl.PerformLayout();
             this.httpPnl.ResumeLayout(false);
@@ -1729,8 +1760,8 @@ namespace BeamMP_Tool
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label7;
         private customSmoothBtn saveBtn;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel generalSettingsPnl;
+        private System.Windows.Forms.Panel mapsPnl;
         private customSmoothBtn customSmoothBtn1;
         private System.Windows.Forms.ListView mapsListView;
         private customSmoothBtn searchMapsBtn;
@@ -1782,6 +1813,8 @@ namespace BeamMP_Tool
         private System.Windows.Forms.CheckBox checkBox1;
         private customSmoothBtn customNameBtn2;
         private customSmoothBtn customDescBtn2;
+        private System.Windows.Forms.TextBox tagsTxtBox;
+        private System.Windows.Forms.Label label11;
     }
 }
 

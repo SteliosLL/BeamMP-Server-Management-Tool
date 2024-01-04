@@ -87,7 +87,6 @@ namespace BeamMP_Tool
         private void Form1_Shown(object sender, EventArgs e)
         {
             bool dontshowAgain = Properties.Settings.Default.dontshowMsgFIRSTSTARTUPNOTE;
-            showMsgBoxDontshow(ref dontshowAgain, "Make sure this program's executable is in the SAME FOLDER as the BeamMP Server executable.", "IMPORTANT NOTE", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Properties.Settings.Default.dontshowMsgFIRSTSTARTUPNOTE = dontshowAgain;
             Properties.Settings.Default.Save();
         }
@@ -453,26 +452,27 @@ namespace BeamMP_Tool
         }//unused
 
         //original values
-        string authKey;
-        bool debug;
-        string name;
-        string desc;
-        string cfgMapFULLname;
-        int maxCars;
-        int maxPlayers;
-        int port;
-        bool pprivate;
-        bool logChat;
-        string resFold;
-        string httpSrvIp;
-        string httpSrvPort;
-        string sslCert;
-        string sslKey;
-        bool useSSL;
-        bool enableHTTP;
-        bool hideUpdt;
-        bool onOffSendErrors;
-        bool sendErrors;
+        string authKey = "";
+        bool debug = false;
+        string name = "";
+        string desc = "";
+        string cfgMapFULLname = "";
+        int maxCars = 0;
+        int maxPlayers = 0;
+        int port = 0;
+        bool pprivate = false;
+        bool logChat = false;
+        string resFold = "";
+        string tags = "";
+        //  string httpSrvIp = "";
+        //  string httpSrvPort = "";
+        // string sslCert = "";
+        //  string sslKey = "";
+        // bool useSSL = false;
+        //bool enableHTTP = false;
+        bool hideUpdt = false;
+        bool onOffSendErrors = false;
+        bool sendErrors = false;
         private void loadCfg()
         {
             if (System.IO.File.Exists(Application.StartupPath + cfgFilePath))
@@ -480,37 +480,44 @@ namespace BeamMP_Tool
                 nameTxtBox.Font = new Font("Segoe UI", 9.75f, FontStyle.Regular);
                 nameTxtBox.ForeColor = Color.White;
                 saveBtn.Enabled = true;
+                cfgNotFound = false;
                 using (StreamReader reader = new StreamReader(File.OpenRead(Application.StartupPath + cfgFilePath)))
                 {
                     // Parse the table
                     TomlTable table = TOML.Parse(reader);
                     //General
-                    authKey = table["General"]["AuthKey"];
-                    debug = table["General"]["Debug"];
-                    desc = table["General"]["Description"];
-                    cfgMapFULLname = table["General"]["Map"];
-                    maxCars = table["General"]["MaxCars"];
-                    maxPlayers = table["General"]["MaxPlayers"];
-                    name = table["General"]["Name"];
-                    port = table["General"]["Port"];
-                    pprivate = table["General"]["Private"];
-                    logChat = table["General"]["LogChat"];
-                    // selectResLocBtn.Tag = table["General"]["ResourceFolder"];
-                    resFold = table["General"]["ResourceFolder"];
-                    //HTTP
-                    httpSrvIp = table["HTTP"]["HTTPServerIP"];
-                    httpSrvPort = table["HTTP"]["HTTPServerPort"];
-                    sslCert = table["HTTP"]["SSLCertPath"];
-                    sslKey = table["HTTP"]["SSLKeyPath"];
-                    useSSL = table["HTTP"]["UseSSL"];
-                    enableHTTP = table["HTTP"]["HTTPServerEnabled"];
-                    //Misc
-                    hideUpdt = table["Misc"]["ImScaredOfUpdates"];
-                    onOffSendErrors = table["Misc"]["SendErrorsShowMessage"];
-                    sendErrors = table["Misc"]["SendErrors"];
+                    try
+                    {
+                        authKey = table["General"]["AuthKey"];
+                        debug = table["General"]["Debug"];
+                        desc = table["General"]["Description"];
+                        cfgMapFULLname = table["General"]["Map"];
+                        maxCars = table["General"]["MaxCars"];
+                        maxPlayers = table["General"]["MaxPlayers"];
+                        name = table["General"]["Name"];
+                        port = table["General"]["Port"];
+                        pprivate = table["General"]["Private"];
+                        logChat = table["General"]["LogChat"];
+                        // selectResLocBtn.Tag = table["General"]["ResourceFolder"];
+                        resFold = table["General"]["ResourceFolder"];
+                        tags = table["General"]["Tags"];
+                        //HTTP
+                        // httpSrvIp = table["HTTP"]["HTTPServerIP"];
+                        // httpSrvPort = table["HTTP"]["HTTPServerPort"];
+                        // sslCert = table["HTTP"]["SSLCertPath"];
+                        // sslKey = table["HTTP"]["SSLKeyPath"];
+                        // useSSL = table["HTTP"]["UseSSL"];
+                        // enableHTTP = table["HTTP"]["HTTPServerEnabled"];
+                        //Misc
+                        hideUpdt = table["Misc"]["ImScaredOfUpdates"];
+                        onOffSendErrors = table["Misc"]["SendErrorsShowMessage"];
+                        sendErrors = table["Misc"]["SendErrors"];
+                    }
+                    catch { msgBox.msgBoxShow(this, @"Some settings were not found in the config file! It may be damaged. Please run your server to repair the config file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                     //set UI
                     authTxtBox.Text = authKey;
+                    tagsTxtBox.Text = tags;
                     debugChckBox.Checked = debug;
                     descTxtBox.Text = desc;
                     maxCarsCombo.Text = maxCars.ToString();
@@ -519,20 +526,19 @@ namespace BeamMP_Tool
                     portTxtBox.Text = port.ToString();
                     privChckBox.Checked = pprivate;
                     logChatChckB.Checked = logChat;
-                    httpSrvIpTxtB.Text = httpSrvIp;
-                    httpSrvPortTxtB.Text = httpSrvPort.ToString();
-                    sslCertPicBox.Tag = sslCert;
-                    sslKeyPicBox.Tag = sslKey;
-                    sslCertSelected();
-                    sslKeySelected();
-                    useSSLChckB.Checked = useSSL;
-                    enableHTTPSrvChckB.Checked = enableHTTP;
+                    // httpSrvIpTxtB.Text = httpSrvIp;
+                    // httpSrvPortTxtB.Text = httpSrvPort.ToString();
+                    // sslCertPicBox.Tag = sslCert;
+                    // sslKeyPicBox.Tag = sslKey;
+                    // sslCertSelected();
+                    // sslKeySelected();
+                    //useSSLChckB.Checked = useSSL;
+                    //   enableHTTPSrvChckB.Checked = enableHTTP;
                     hideUpdtMsgChckB.Checked = hideUpdt;
                     onOffSendErrorsChckB.Checked = onOffSendErrors;
                     sendErrorsChckB.Checked = sendErrors;
-
-
                 }
+
                 nameTxtBox.Tag = name;
                 descTxtBox.Tag = desc;
                 BeamMPtoRTF_conv(name, nameTxtBox);
@@ -541,9 +547,27 @@ namespace BeamMP_Tool
             else
             {
                 this.Focus();
-                msgBox.msgBoxShow(this, @"The file ""ServerConfig.toml"" which contains the settings was not found! Please run the server at least once to generate the file and then click the reload button at top-left to reload the file.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                msgBox.msgBoxShow(this, @"The file ""ServerConfig.toml"" which contains the settings was not found! Please run the server at least once to generate the file and then click the reload button at the top-left to reload the file." + Environment.NewLine + Environment.NewLine + "Also make sure both the Management tool and the BeamMP Server executable are in the SAME folder", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               if (!cfgNotFound) smoothBlinkBtnForeColor(reloadCfgBtn);
+                cfgNotFound = true;
                 saveBtn.Enabled = false;
             }
+        }
+        bool cfgNotFound = false;
+        private void smoothBlinkBtnForeColor(Button btn)
+        {
+            btn.FlatAppearance.BorderSize = 1;
+            StartThread(() =>
+            {
+                while (cfgNotFound && this.Visible)//if the form is not visible stop the loop so that the tool can fully exit
+                {
+                    InvokeIfRequired(btn, () => Transition.run(btn, "ForeColor", Color.Red, new TransitionType_Linear(300)));
+                    Thread.Sleep(600);
+                    InvokeIfRequired(btn, () => Transition.run(btn, "ForeColor", Color.LawnGreen, new TransitionType_Linear(300)));
+                    Thread.Sleep(600);
+                }
+                InvokeIfRequired(btn, () => { btn.ForeColor = Color.LawnGreen; btn.FlatAppearance.BorderSize = 0; });
+            });
 
         }
         public void setSelectionFormatting(string style, RichTextBox RTxtBox, string forceStyle = "")
@@ -1155,13 +1179,14 @@ namespace BeamMP_Tool
                 node["General"]["Port"] = int.Parse(portTxtBox.Text);
                 node["General"]["Private"] = privChckBox.Checked;
                 node["General"]["LogChat"] = logChatChckB.Checked;
-                //HTTP
-                node["HTTP"]["HTTPServerIP"] = httpSrvIpTxtB.Text;
-                node["HTTP"]["HTTPServerPort"] = httpSrvPortTxtB.Text;
-                node["HTTP"]["SSLCertPath"] = sslCertPicBox.Tag.ToString();
-                node["HTTP"]["SSLKeyPath"] = sslKeyPicBox.Tag.ToString();
-                node["HTTP"]["UseSSL"] = useSSLChckB.Checked;
-                node["HTTP"]["HTTPServerEnabled"] = enableHTTPSrvChckB.Checked;
+                node["General"]["Tags"] = tagsTxtBox.Text;
+                //HTTP (UNUSED)
+                // node["HTTP"]["HTTPServerIP"] = httpSrvIpTxtB.Text;
+                // node["HTTP"]["HTTPServerPort"] = httpSrvPortTxtB.Text;
+                // node["HTTP"]["SSLCertPath"] = sslCertPicBox.Tag.ToString();
+                // node["HTTP"]["SSLKeyPath"] = sslKeyPicBox.Tag.ToString();
+                // node["HTTP"]["UseSSL"] = useSSLChckB.Checked;
+                // node["HTTP"]["HTTPServerEnabled"] = enableHTTPSrvChckB.Checked;
                 //Misc
                 node["Misc"]["ImScaredOfUpdates"] = hideUpdtMsgChckB.Checked;
                 node["Misc"]["SendErrorsShowMessage"] = onOffSendErrorsChckB.Checked;
@@ -1792,19 +1817,19 @@ namespace BeamMP_Tool
 
         private void nameTxtBox_MouseLeave(object sender, EventArgs e)
         {
-            int cursorPosX = panel8.PointToClient(Cursor.Position).X;
-            int cursorPosY = panel8.PointToClient(Cursor.Position).Y;
+            int cursorPosX = generalSettingsPnl.PointToClient(Cursor.Position).X;
+            int cursorPosY = generalSettingsPnl.PointToClient(Cursor.Position).Y;
             //subtract or add 4 because the mouseleave event triggers too soon before the cursor has a chance to fully leave the control
-            if (cursorPosX + 4 > nameTxtBox.Right || cursorPosX - 4 < nameTxtBox.Left  || cursorPosY -4 < nameTxtBox.Top || cursorPosY + 4> nameTxtBox.Bottom)
+            if (cursorPosX + 4 > nameTxtBox.Right || cursorPosX - 4 < nameTxtBox.Left || cursorPosY - 4 < nameTxtBox.Top || cursorPosY + 4 > nameTxtBox.Bottom)
             {
-                customNameBtn2.Visible = false;              
+                customNameBtn2.Visible = false;
             }
 
         }
         private void descTxtBox_MouseLeave(object sender, EventArgs e)
         {
-            int cursorPosX = panel8.PointToClient(Cursor.Position).X;
-            int cursorPosY = panel8.PointToClient(Cursor.Position).Y;
+            int cursorPosX = generalSettingsPnl.PointToClient(Cursor.Position).X;
+            int cursorPosY = generalSettingsPnl.PointToClient(Cursor.Position).Y;
             //subtract or add 4 because the mouseleave event triggers too soon before the cursor has a chance to fully leave the control
             if (cursorPosX + 4 > descTxtBox.Right || cursorPosX - 4 < descTxtBox.Left || cursorPosY - 4 < descTxtBox.Top || cursorPosY + 4 > descTxtBox.Bottom)
             {
