@@ -30,7 +30,6 @@ namespace BeamMP_Tool
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(infoHelpFrm));
-            this.baseFormUsrCtrl1 = new BeamMP_Tool.baseFormUsrCtrl();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,25 +41,11 @@ namespace BeamMP_Tool
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.baseFormUsrCtrl1 = new BeamMP_Tool.baseFormUsrCtrl();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // baseFormUsrCtrl1
-            // 
-            this.baseFormUsrCtrl1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.baseFormUsrCtrl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.baseFormUsrCtrl1.ControlBox = true;
-            this.baseFormUsrCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.baseFormUsrCtrl1.Icon = global::BeamMP_Tool.Properties.Resources.icons8_info_24;
-            this.baseFormUsrCtrl1.Location = new System.Drawing.Point(0, 0);
-            this.baseFormUsrCtrl1.Minimize_Button = true;
-            this.baseFormUsrCtrl1.Name = "baseFormUsrCtrl1";
-            this.baseFormUsrCtrl1.parentForm = this;
-            this.baseFormUsrCtrl1.Size = new System.Drawing.Size(511, 544);
-            this.baseFormUsrCtrl1.TabIndex = 0;
-            this.baseFormUsrCtrl1.Title = "Info-Help";
             // 
             // textBox1
             // 
@@ -187,6 +172,21 @@ namespace BeamMP_Tool
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Information";
+            // 
+            // baseFormUsrCtrl1
+            // 
+            this.baseFormUsrCtrl1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.baseFormUsrCtrl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.baseFormUsrCtrl1.ControlBox = true;
+            this.baseFormUsrCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.baseFormUsrCtrl1.Icon = global::BeamMP_Tool.Properties.Resources.icons8_info_24;
+            this.baseFormUsrCtrl1.Location = new System.Drawing.Point(0, 0);
+            this.baseFormUsrCtrl1.Minimize_Button = true;
+            this.baseFormUsrCtrl1.Name = "baseFormUsrCtrl1";
+            this.baseFormUsrCtrl1.parentForm = this;
+            this.baseFormUsrCtrl1.Size = new System.Drawing.Size(511, 544);
+            this.baseFormUsrCtrl1.TabIndex = 0;
+            this.baseFormUsrCtrl1.Title = "Info-Help";
             // 
             // infoHelpFrm
             // 

@@ -410,15 +410,22 @@ namespace BeamMP_Tool
             //  pluginImgList.Images.Clear();
 
             List<string> DirPaths = new List<string>();
-            string[] DirPathsCLIENTFold;
-            string[] DirPathsDEACTIVAEDFold;
+            List<string> DirPathsSERVERFold;
+            List<string> DirPathsDEACTIVAEDFold;
             try
             {
-                DirPathsCLIENTFold = Directory.GetFiles(Application.StartupPath + @"\" + resFold + @"\Server\deactivated_plugins", "*.lua", SearchOption.TopDirectoryOnly);
-                DirPathsDEACTIVAEDFold = Directory.GetFiles(Application.StartupPath + @"\" + resFold + @"\Server", "*.lua", SearchOption.TopDirectoryOnly);
+                DirPathsSERVERFold = Directory.GetDirectories(Application.StartupPath + @"\" + resFold + @"\Server").ToList();
+                DirPathsDEACTIVAEDFold = Directory.GetDirectories(Application.StartupPath + @"\" + resFold + @"\Server\deactivated_plugins").ToList();
             }
             catch (Exception) { appendLog(@"The ""deactivated_plugins"" or ""Server"" folder could not be found. No plugins loaded"); return; }
-            DirPaths.AddRange(DirPathsCLIENTFold.OfType<string>().ToList());
+            foreach (string path in DirPathsSERVERFold.ToList())
+            {
+                if (Directory.GetFiles(path, "*.lua").Length == 0 || new DirectoryInfo(path).Name == "deactivated_plugins")
+                {
+                    DirPathsSERVERFold.Remove(path);
+                }
+            }
+            DirPaths.AddRange(DirPathsSERVERFold.OfType<string>().ToList());
             DirPaths.AddRange(DirPathsDEACTIVAEDFold.OfType<string>().ToList());
             foreach (string foldPath in DirPaths)
             {
@@ -429,8 +436,8 @@ namespace BeamMP_Tool
                 if (foldPath.Contains(@"\deactivated_plugins"))
                 { pluginActivated = false; }
                 else { pluginActivated = true; }
-                pluginTitle = Path.GetFileName(foldPath);
-                pluginCodeName = Path.GetFileName(foldPath);
+                pluginTitle = new DirectoryInfo(foldPath).Name;
+                pluginCodeName = new DirectoryInfo(foldPath).Name;
                 //add to list
                 ListViewItem listItem = new ListViewItem();
                 listItem.Tag = pluginCodeName;
@@ -548,7 +555,7 @@ namespace BeamMP_Tool
             {
                 this.Focus();
                 msgBox.msgBoxShow(this, @"The file ""ServerConfig.toml"" which contains the settings was not found! Please run the server at least once to generate the file and then click the reload button at the top-left to reload the file." + Environment.NewLine + Environment.NewLine + "Also make sure both the Management tool and the BeamMP Server executable are in the SAME folder", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-               if (!cfgNotFound) smoothBlinkBtnForeColor(reloadCfgBtn);
+                if (!cfgNotFound) smoothBlinkBtnForeColor(reloadCfgBtn);
                 cfgNotFound = true;
                 saveBtn.Enabled = false;
             }
