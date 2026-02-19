@@ -11,4 +11,4 @@ Just to clear some confusion i've been noticing: **You should download the first
 ![εικόνα](https://github.com/SteliosLL/BeamMP-Server-Management-Tool/assets/55713334/2f1e852d-27f7-4346-9987-3674e17d098a)
 ![εικόνα](https://github.com/SteliosLL/BeamMP-Server-Management-Tool/assets/55713334/520cc19b-fcb5-4352-9c04-165cc032a734)
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/servertool)
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=9F93HMNE6NDFY)
